@@ -4,6 +4,9 @@ const loadingOverlay = document.querySelector(`.load-screen`);
 let websiteLoaded = false;
 let loadSeconds = 0;
 
+window.addEventListener("DOMContentLoaded", function() {
+    websiteLoaded = true;
+});
 
 function loadScreenAnimation() {
     if (websiteLoaded != `yes`) {
@@ -28,12 +31,12 @@ function loadScreenAnimation() {
 }
 
 function loadScreenFade() {
-    loadingOverlay.style.opacity = loadingOverlay.style.opacity -= 0.02;
+    loadingOverlay.style.opacity = loadingOverlay.style.opacity -= 0.01;
 
     if (loadingOverlay.style.opacity > 0.03) {
         setTimeout(() => {
             loadScreenFade();
-        }, 100);
+        }, 25);
     } else {
         loadingOverlay.remove();
         websiteLoaded = `yes`;
