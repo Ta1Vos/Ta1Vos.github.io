@@ -36,7 +36,7 @@ function loadScreenFade() {
     if (loadingOverlay.style.opacity > 0.03) {
         setTimeout(() => {
             loadScreenFade();
-        }, 25);
+        }, 15);
     } else {
         loadingOverlay.remove();
         websiteLoaded = `yes`;
