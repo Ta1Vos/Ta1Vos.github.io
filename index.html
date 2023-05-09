@@ -19,8 +19,31 @@
 
 <body>
     <header>
-        <!-- place navbar here -->
-
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-orange z-0 fixed-top p-2 ps-4">
+            <a class="navbar-brand fs-4" href="#">Tim Vos Portfolio</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover">
+                    <div class="col-2"></div>
+                    <li class="col-1 nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="col-1 nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="col-1 nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- loading screen -->
         <div class="z-1 w-100 vh-100 bg-primary load-screen d-flex align-items-center justify-content-center fixed-top">
             <div class="text-center">
                 <h1>Tim Vos Portfolio</h1>

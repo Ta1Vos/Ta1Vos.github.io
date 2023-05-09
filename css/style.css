@@ -1,0 +1,22 @@
+body {
+    background-color: #E6E6E6;
+    color: #39393A;
+}
+
+p {
+    background-color: #6C534E;
+}
+
+.bg-orange {
+    background-color: #FF8552;
+}
+
+.li-hover > li:hover {
+    transition: 0.5s;
+    background-color: #85FFC7;
+    border-radius: 10px;
+}
+
+.li-hover > li {
+    transition: 1s;
+}
