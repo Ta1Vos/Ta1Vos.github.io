@@ -1,10 +1,12 @@
 body {
     background-color: #E6E6E6;
     color: #39393A;
+    overflow-x: hidden;
 }
 
-p {
+.bg-brown {
     background-color: #6C534E;
+    color: #E6E6E6;
 }
 
 .bg-orange {
