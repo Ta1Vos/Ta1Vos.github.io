@@ -4,10 +4,16 @@ body {
     overflow-x: hidden;
 }
 
-.page-transition {
-    animation-delay: 3s;
-    animation-duration: 5s;
-    animation-name: slideinright;
+.page-transition-out {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-name: slideoutright;
+}
+
+.page-transition-in {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-name: slideinleft;
 }
 
 .bg-brown {
@@ -36,8 +42,8 @@ body {
     }
 
     to {
-        margin-left:200%;
-        margin-right: -200%;
+        margin-left:100%;
+        margin-right: -100%;
     }
 }
 
@@ -48,15 +54,15 @@ body {
     }
 
     to {
-        margin-left: -200%;
-        margin-right: 200%;
+        margin-left: -100%;
+        margin-right: 100%;
     }
 }
 
 @keyframes slideinright {
     from {
-        margin-left: 200%;
-        margin-right: -200%;
+        margin-left: 100%;
+        margin-right: -100%;
     }
 
     to {
@@ -67,8 +73,8 @@ body {
 
 @keyframes slideinleft {
     from {
-        margin-left: -200%;
-        margin-right: 200%;
+        margin-left: -100%;
+        margin-right: 100%;
     }
 
     to {
