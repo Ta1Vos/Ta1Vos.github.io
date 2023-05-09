@@ -4,6 +4,12 @@ body {
     overflow-x: hidden;
 }
 
+.page-transition {
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-name: slideinright;
+}
+
 .bg-brown {
     background-color: #6C534E;
     color: #E6E6E6;
@@ -21,4 +27,52 @@ body {
 
 .li-hover > li {
     transition: 1s;
+}
+
+@keyframes slideoutright {
+    from {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    to {
+        margin-left:200%;
+        margin-right: -200%;
+    }
+}
+
+@keyframes slideoutleft {
+    from {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    to {
+        margin-left: -200%;
+        margin-right: 200%;
+    }
+}
+
+@keyframes slideinright {
+    from {
+        margin-left: 200%;
+        margin-right: -200%;
+    }
+
+    to {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@keyframes slideinleft {
+    from {
+        margin-left: -200%;
+        margin-right: 200%;
+    }
+
+    to {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
