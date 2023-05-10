@@ -1,6 +1,6 @@
 const menuButtons = document.querySelectorAll(`.menu-btn`);
 
-const body = document.body;
+const main = document.querySelector('main');
 
 let animationRunning = false;
 
@@ -16,16 +16,16 @@ function pageChange(pageName) {
     if (animationRunning == false) {
         animationRunning = true;
 
-        body.classList.add(`page-transition-out`);
+        main.classList.add(`page-transition-out`);
 
         setTimeout(() => {
-            body.classList.remove(`page-transition-out`);
+            main.classList.remove(`page-transition-out`);
             //Load the page content
             loadPageContent(pageName);
 
-            body.classList.add(`page-transition-in`);
+            main.classList.add(`page-transition-in`);
             setTimeout(() => {
-                body.classList.remove(`page-transition-in`);
+                main.classList.remove(`page-transition-in`);
                 animationRunning = false;
             }, 1490);
         }, 1490);
@@ -37,7 +37,8 @@ function loadPageContent(pageClass) {
     const page = document.querySelector(`.${pageClass}`);
 
     if (!page) {
-        loadPageContent('.home-page');
+        loadPageContent('home-page');
+        return;
     }
 
     const pages = document.querySelectorAll('.page');
