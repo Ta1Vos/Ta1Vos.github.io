@@ -1,7 +1,8 @@
 body {
-    background-color: #E6E6E6;
+    background-image: linear-gradient(45deg, #FF8552, rgba(228, 225, 219, 1));
     color: #39393A;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .page-transition-out {
@@ -25,7 +26,7 @@ body {
 }
 
 .bg-brown {
-    background-color: #6C534E;
+    background-color: #402114;
     color: #E6E6E6;
 }
 
