@@ -1,4 +1,5 @@
 const homeBtn = document.querySelector(`.home-btn`);
+const aboutMeBtn = document.querySelector(`.aboutme-btn`);
 
 const body = document.body;
 
@@ -6,6 +7,10 @@ let animationRunning = false;
 
 homeBtn.addEventListener(`click`, function() {
     pageChange('home-page');
+});
+
+aboutMeBtn.addEventListener(`click`, function() {
+    pageChange('aboutme-page');
 });
 
 //The page change animation(the swipe), also loads the content.
@@ -29,19 +34,19 @@ function pageChange(pageName) {
     }
 }
 
-//Show the content for the right page, beware that it is a valid class!
+//Show the content for the right page, beware that it has to be a valid class!
 function loadPageContent(pageClass) {
-    const page = document.querySelector(pageClass);
+    const page = document.querySelector(`.${pageClass}`);
 
     if (!page) {
-        loadPageContent('home-page');
+        loadPageContent('.home-page');
     }
 
-    const pages = document.querySelectorAll('page');
+    const pages = document.querySelectorAll('.page');
 
     for (let i = 0; i < pages.length; i++) {
-        pages[i].style.display = 'none';
+        pages[i].classList.add(`page-invisible`);
     }
 
-    page.style.display = 'block';
+    page.classList.remove(`page-invisible`);
 }

@@ -16,6 +16,10 @@ body {
     animation-name: slideinleft;
 }
 
+.page-invisible {
+    display: none;
+}
+
 .bg-brown {
     background-color: #6C534E;
     color: #E6E6E6;
