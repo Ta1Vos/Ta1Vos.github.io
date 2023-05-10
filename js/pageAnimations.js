@@ -1,17 +1,15 @@
-const homeBtn = document.querySelector(`.home-btn`);
-const aboutMeBtn = document.querySelector(`.aboutme-btn`);
+const menuButtons = document.querySelectorAll(`.menu-btn`);
 
 const body = document.body;
 
 let animationRunning = false;
 
-homeBtn.addEventListener(`click`, function() {
-    pageChange('home-page');
-});
-
-aboutMeBtn.addEventListener(`click`, function() {
-    pageChange('aboutme-page');
-});
+//Puts eventlistener on every page button
+for (let i = 0; i < menuButtons.length; i++) {
+    menuButtons[i].addEventListener(`click`, function() {
+        pageChange(`page-${i}`);
+    });
+}
 
 //The page change animation(the swipe), also loads the content.
 function pageChange(pageName) {
