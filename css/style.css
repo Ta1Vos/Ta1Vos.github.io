@@ -33,6 +33,10 @@ body {
     background-color: #FF8552;
 }
 
+.border-cyan {
+    border: 5px solid #85FFC7;
+}
+
 .li-hover > li:hover {
     transition: 0.5s;
     background-color: #85FFC7;
