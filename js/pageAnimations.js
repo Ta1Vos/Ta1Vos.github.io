@@ -3,32 +3,52 @@ const menuButtons = document.querySelectorAll(`.menu-btn`);
 const main = document.querySelector('main');
 
 let animationRunning = false;
+let currentPage = 0;
 
 //Puts eventlistener on every page button
 for (let i = 0; i < menuButtons.length; i++) {
     menuButtons[i].addEventListener(`click`, function() {
-        pageChange(`page-${i}`);
+        pageChange(`page-${i}`, i);
     });
 }
 
 //The page change animation(the swipe), also loads the content.
-function pageChange(pageName) {
+function pageChange(pageName, pageNumber) {
     if (animationRunning == false) {
         animationRunning = true;
+        
+        //Looks whether the page has to scroll left or right
+        if (currentPage > pageNumber) {
+            main.classList.add(`page-transition-right-out`);
 
-        main.classList.add(`page-transition-out`);
-
-        setTimeout(() => {
-            main.classList.remove(`page-transition-out`);
-            //Load the page content
-            loadPageContent(pageName);
-
-            main.classList.add(`page-transition-in`);
             setTimeout(() => {
-                main.classList.remove(`page-transition-in`);
-                animationRunning = false;
+                main.classList.remove(`page-transition-right-out`);
+                //Load the page content
+                loadPageContent(pageName);
+    
+                main.classList.add(`page-transition-left-in`);
+                setTimeout(() => {
+                    main.classList.remove(`page-transition-left-in`);
+                    animationRunning = false;
+                }, 1490);
             }, 1490);
-        }, 1490);
+        } else {
+            main.classList.add(`page-transition-left-out`);
+
+            setTimeout(() => {
+                main.classList.remove(`page-transition-left-out`);
+                //Load the page content
+                loadPageContent(pageName);
+    
+                main.classList.add(`page-transition-right-in`);
+                setTimeout(() => {
+                    main.classList.remove(`page-transition-right-in`);
+                    animationRunning = false;
+                }, 1490);
+            }, 1490);
+        }
+
+        currentPage = pageNumber;
     }
 }
 
