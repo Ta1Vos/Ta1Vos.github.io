@@ -20,6 +20,10 @@ body {
     display: none;
 }
 
+.menu-btn {
+    cursor: pointer;
+}
+
 .bg-brown {
     background-color: #6C534E;
     color: #E6E6E6;
