@@ -22,30 +22,30 @@ function pageChange(pageName, pageNumber) {
             main.classList.add(`page-transition-right-out`);
 
             setTimeout(() => {
-                main.classList.remove(`page-transition-right-out`);
                 //Load the page content
                 loadPageContent(pageName);
     
                 main.classList.add(`page-transition-left-in`);
                 setTimeout(() => {
+                    main.classList.remove(`page-transition-right-out`);
                     main.classList.remove(`page-transition-left-in`);
                     animationRunning = false;
-                }, 1490);
-            }, 1490);
+                }, 1500);
+            }, 1495);
         } else {
             main.classList.add(`page-transition-left-out`);
 
             setTimeout(() => {
-                main.classList.remove(`page-transition-left-out`);
                 //Load the page content
                 loadPageContent(pageName);
     
                 main.classList.add(`page-transition-right-in`);
                 setTimeout(() => {
+                    main.classList.remove(`page-transition-left-out`);
                     main.classList.remove(`page-transition-right-in`);
                     animationRunning = false;
-                }, 1490);
-            }, 1490);
+                }, 1500);
+            }, 1495);
         }
 
         currentPage = pageNumber;
@@ -67,5 +67,7 @@ function loadPageContent(pageClass) {
         pages[i].classList.add(`page-invisible`);
     }
 
-    page.classList.remove(`page-invisible`);
+    setTimeout(() => {
+        page.classList.remove(`page-invisible`);
+    }, 50);
 }
