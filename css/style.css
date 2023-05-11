@@ -6,24 +6,28 @@ body {
 }
 
 .page-transition-right-out {
+    animation-delay: 0s;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
     animation-name: slideoutright;
 }
 
 .page-transition-left-in {
+    animation-delay: 0s;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-name: slideinleft;
 }
 
 .page-transition-left-out {
+    animation-delay: 0s;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
     animation-name: slideoutleft;
 }
 
 .page-transition-right-in {
+    animation-delay: 0s;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-name: slideinright;
