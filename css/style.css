@@ -50,8 +50,8 @@ body {
     background-color: #FF8552;
 }
 
-.border-cyan {
-    border: 5px solid #85FFC7;
+.bg-darkorange {
+    background-color: #E67849;
 }
 
 .li-hover > li:hover {
