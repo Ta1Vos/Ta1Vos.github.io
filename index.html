@@ -13,14 +13,125 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
     <header>
-        <!-- place navbar here -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md bg-orange z-0 fixed-top p-2 ps-4">
+            <div class="navbar-brand fs-4 menu-btn">Tim Vos Portfolio</div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover d-flex align-items-center text-center">
+                    <div class="col-0 col-lg-1"></div>
+                    <li class="col-12 col-md-2 nav-item">
+                        <div class="nav-link disabled menu-btn text-center">About Me <span class="visually-hidden"></span></div>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item">
+                        <div class="nav-link menu-btn disabled">Skills & Experience <span class="visually-hidden"></span></div>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item">
+                        <div class="nav-link menu-btn disabled">Projects <span class="visually-hidden"></span></div>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item">
+                        <div class="nav-link menu-btn disabled">Contact <span class="visually-hidden"></span></div>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item">
+                        <div class="nav-link menu-btn disabled">FAQ <span class="visually-hidden"></span></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- loading screen -->
+        <div class="z-1 w-100 vh-100 bg-primary load-screen d-flex align-items-center justify-content-center fixed-top">
+            <div class="text-center">
+                <h1>Tim Vos Portfolio</h1>
+                <hr>
+                <h4 class="loading-text">Loading</h4>
+            </div>
+        </div>
     </header>
-    <main>
-        <h1 class="text-center">Tim Vos | Portfolio</h1>
+    <main class="pt-5 mt-5">
+        <div class="home-page page-0 page">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="row col-8 text-center bg-brown p-lg-2 rounded-1">
+                    <div class="col-0 col-lg-1"></div>
+                    <div class="col-6 col-lg-3 bg-light m-auto">
+                        <img src="img/Image1.png" class="img-fluid" alt="Image of Tim Vos">
+                    </div>
+                    <div class="col-0 col-lg-1"></div>
+                    <div class="col-12 col-lg-6 text-dark d-flex align-items-center">
+                        <p class="bg-light border border-secondary rounded-1 p-2">
+                            Hello there! Welcome to my portfolio!<br><br>
+
+                            I'm Tim Vos and this is my portfolio site. I'm a student at ROC Mondriaan, currently
+                            following
+                            the study of Software Development.
+                            On this site you'll be able to find information about me, my projects and frequently asked questions.
+                            If necessary, you'll also be able to contact me on the contact page.
+                            I wish you a good time looking around my website!
+                        </p>
+                    </div>
+                    <div class="col-0 col-lg-1"></div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="container-fluid row d-flex flex-row justify-content-center pt-5 mt-5">
+                <div class="col-12 col-lg-3 card m-3">
+                    <div class="card-body">
+                        <h4 class="card-title">About me</h4>
+                        <p>
+                            Some information about myself!
+                        </p>
+                        <a href="#" class="card-link stretched-link bg-brown p-2 rounded-2 px-4">Work in progress!</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 card m-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Skills & Experience</h4>
+                        <p>
+                            Here I'll talk about the skills and experience I have with software developing!
+                        </p>
+                        <a href="#" class="card-link stretched-link bg-brown p-2 rounded-2 px-4">Work in progress!</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 card m-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Projects</h4>
+                        <p>
+                            Projects I have made until now!
+                        </p>
+                        <a href="#" class="card-link stretched-link bg-brown p-2 rounded-2 px-4">Work in progress!</a>
+                    </div>
+                </div>
+                <div class="col-lg-12 my-lg-3">
+                </div>
+                <div class="col-12 col-lg-3 card m-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Contact</h4>
+                        <p>
+                            If you're interested in business with me, you can find information to contact me here!
+                        </p>
+                        <a href="#" class="card-link stretched-link bg-brown p-2 rounded-2 px-4">Work in progress!</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 card m-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Frequently asked questions (FAQ)</h4>
+                        <p>
+                            If you have a question, it may have been answered multiple times already. You can find those
+                            here!
+                        </p>
+                        <a href="#" class="card-link stretched-link bg-brown p-2 rounded-2 px-4">Work in progress!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- place footer here -->
@@ -33,6 +144,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/pageAnimations.js"></script>
 </body>
 
 </html>
