@@ -54,6 +54,10 @@ body {
     background-color: #E67849;
 }
 
+.w-80 {
+    width: 80%;
+}
+
 .li-hover > li:hover {
     transition: 0.5s;
     background-color: #85FFC7;
