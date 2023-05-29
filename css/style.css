@@ -68,6 +68,10 @@ body {
     transition: 1s;
 }
 
+.progress, .progress-bar {
+    height: 1.5vh;
+}
+
 @keyframes slideoutright {
     from {
         margin-left: 0%;
