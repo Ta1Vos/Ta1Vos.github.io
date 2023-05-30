@@ -72,6 +72,11 @@ body {
     height: 1.5vh;
 }
 
+.clickable {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @keyframes slideoutright {
     from {
         margin-left: 0%;

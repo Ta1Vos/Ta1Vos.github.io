@@ -1,4 +1,5 @@
 const menuButtons = document.querySelectorAll(`.menu-btn`);
+const otherInteractions = document.querySelectorAll(`.redirect-btn`);
 
 const main = document.querySelector('main');
 

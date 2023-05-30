@@ -21,7 +21,7 @@
     <header>
         <!-- navbar -->
         <nav class="navbar navbar-expand-md bg-orange z-0 fixed-top p-2 ps-4">
-            <div class="navbar-brand fs-4 menu-btn">Tim Vos Portfolio</div>
+            <div class="navbar-brand fs-4 menu-btn" id="home-page">Tim Vos Portfolio</div>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"></button>
@@ -29,7 +29,7 @@
                 <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover d-flex align-items-center text-center">
                     <li class="col-0 col-lg-1"></li>
                     <li class="col-12 col-md-2 nav-item">
-                        <div class="nav-link menu-btn text-center">About Me <span class="visually-hidden"></span></div>
+                        <div class="nav-link menu-btn text-center" id="aboutme-page">About Me <span class="visually-hidden"></span></div>
                     </li>
                     <li class="col-12 col-md-2 nav-item">
                         <div class="nav-link menu-btn disabled">Placeholder <span class="visually-hidden"></span></div>
@@ -197,8 +197,8 @@
                             Skills & Experience
                         </p>
                     </div>
-                    <div class="w-25 bg-brown p-1 rounded-3 mt-5">
-                        <ul>
+                    <div class="row p-1 mt-5">
+                        <ul class="col-3 p-3 bg-brown rounded-3">
                             <li class="list-group-item my-2 rounded">
                                 HTML
                                 <div class="progress">
@@ -224,6 +224,15 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="col-5"></div>
+                        <div class="col-4 bg-brown rounded-3">
+                            <p>
+                                As of now, I <u>do not</u> have experience with any kind of company. In the future I will add a list with experiences.
+                            </p>
+                            <p>
+                                Besides companies, I am able to show projects I have made, which can be found at the <span class="text-primary clickable">project page</span>.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col"></div>
