@@ -77,6 +77,26 @@ body {
     cursor: pointer;
 }
 
+.html-progress-bar {
+    width: 70%;
+}
+
+.css-progress-bar {
+    width: 65%;
+}
+
+.bs-progress-bar {
+    width: 80%;
+}
+
+.js-progress-bar {
+    width: 82%;
+}
+
+.design-progress-bar {
+    width: 14%;
+}
+
 @keyframes slideoutright {
     from {
         margin-left: 0%;
