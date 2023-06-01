@@ -13,11 +13,10 @@ for (let i = 0; i < menuButtons.length; i++) {
     });
 }
 
-//For every button with the class "redirect-btn" and an id that serves for the page it leads to.
+//For every button with the class "redirect-btn" and a data-value that serves for the page it leads to.
 for (let i = 0; i < otherInteractions.length; i++) {
     otherInteractions[i].addEventListener(`click`, function() {
-        const toPage = otherInteractions[i].id;
-        console.log(toPage)
+        const toPage = otherInteractions[i].getAttribute('data-value');
         pageChange(`page-${toPage}`, toPage);
     })
 }
