@@ -13,6 +13,15 @@ for (let i = 0; i < menuButtons.length; i++) {
     });
 }
 
+//For every button with the class "redirect-btn" and an id that serves for the page it leads to.
+for (let i = 0; i < otherInteractions.length; i++) {
+    otherInteractions[i].addEventListener(`click`, function() {
+        const toPage = otherInteractions[i].id;
+        console.log(toPage)
+        pageChange(`page-${toPage}`, toPage);
+    })
+}
+
 //The page change animation(the swipe), also loads the content.
 function pageChange(pageName, pageNumber) {
     if (animationRunning == false) {
@@ -47,6 +56,10 @@ function pageChange(pageName, pageNumber) {
                     animationRunning = false;
                 }, 1500);
             }, 1495);
+        }
+
+        if (currentPage != Number) {
+            currentPage = 0;
         }
 
         currentPage = pageNumber;
