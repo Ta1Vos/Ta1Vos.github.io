@@ -72,7 +72,7 @@ body {
     height: 1.5vh;
 }
 
-.clickable {
+.clickable, .redirect-btn {
     text-decoration: underline;
     cursor: pointer;
 }
