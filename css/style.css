@@ -37,6 +37,16 @@ body {
     display: none;
 }
 
+.card-text {
+    transition: 2s;
+    overflow: hidden;
+    max-height: 50vh;
+}
+
+.shrinked-div {
+    max-height: 5vh;
+}
+
 .menu-btn {
     cursor: pointer;
 }
