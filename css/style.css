@@ -68,21 +68,23 @@ body {
     width: 80%;
 }
 
-.li-hover > li:hover {
+.li-hover>li:hover {
     transition: 0.5s;
     background-color: #85FFC7;
     border-radius: 10px;
 }
 
-.li-hover > li {
+.li-hover>li {
     transition: 1s;
 }
 
-.progress, .progress-bar {
+.progress,
+.progress-bar {
     height: 1.5vh;
 }
 
-.clickable, .redirect-btn {
+.clickable,
+.redirect-btn {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -107,10 +109,6 @@ body {
     width: 14%;
 }
 
-.project-card {
-    z-index: -1 !important;
-}
-
 @keyframes slideoutright {
     from {
         margin-left: 0%;
@@ -118,7 +116,7 @@ body {
     }
 
     to {
-        margin-left:100%;
+        margin-left: 100%;
         margin-right: -100%;
     }
 }
