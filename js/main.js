@@ -4,34 +4,32 @@ const projectCards = document.querySelectorAll('.project-card');
 
 let cancelDivShrink = false;
 
-function shrinkDiv(div) {
-    if (cancelDivShrink == false) {
-        div.classList.add('shrinked-div');
-    } else {
-        cancelDivShrink = false;
-    }
-}
+// function shrinkDiv(div) {
+//     if (cancelDivShrink == false) {
+//         div.style.maxHeight = 'max-content';
+//     } else {
+//         cancelDivShrink = false;
+//     }
+// }
 
-function growDiv(div) {
-    div.classList.remove('shrinked-div');
-}
+// function growDiv(div) {
+//     div.style.maxHeight = div.closest('.row').querySelector('img').offsetHeight;
+// }
 
-projectCards.forEach(card => {
-    const text = card.querySelector('.card-text');
+// projectCards.forEach(card => {
+//     const text = card.querySelector('.card-text');
 
-    text.style.maxheight = `max-content`;
+//     card.addEventListener('mouseenter', function() {
+//         growDiv(text);
+//     });
 
-    card.addEventListener('mouseenter', function() {
-        growDiv(text);
-    });
+//     card.addEventListener('mouseleave', function() {
+//         shrinkDiv(text);
+//     });
 
-    card.addEventListener('mouseleave', function() {
-        shrinkDiv(text);
-    });
+//     card.addEventListener('click', function() {
+//         cancelDivShrink = true;
+//     });
 
-    card.addEventListener('click', function() {
-        cancelDivShrink = true;
-    });
-
-    text.classList.add('shrinked-div');
-});
+//     text.classList.add('shrinked-div');
+// });
