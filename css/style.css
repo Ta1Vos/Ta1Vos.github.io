@@ -107,6 +107,10 @@ body {
     width: 14%;
 }
 
+.project-card {
+    z-index: -1 !important;
+}
+
 @keyframes slideoutright {
     from {
         margin-left: 0%;
