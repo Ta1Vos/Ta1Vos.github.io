@@ -109,6 +109,10 @@ body {
     width: 14%;
 }
 
+.w-md-25-75 {
+    width: 25%;
+}
+
 @keyframes slideoutright {
     from {
         margin-left: 0%;
@@ -154,5 +158,12 @@ body {
     to {
         margin-left: 0%;
         margin-right: 0%;
+    }
+}
+
+/* MD Breakpoint */
+@media screen and (max-width:768px) {
+    .w-md-25-75 {
+        width: 75%;
     }
 }
