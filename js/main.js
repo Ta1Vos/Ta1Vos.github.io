@@ -2,6 +2,8 @@ document.body.style.backgroundImage = `linear-gradient(${Math.round(Math.random(
 
 const projectCards = document.querySelectorAll('.project-card');
 
+const faqDivs = document.querySelectorAll('.faq-question');
+
 let cancelDivShrink = false;
 
 // function shrinkDiv(div) {
@@ -33,3 +35,18 @@ let cancelDivShrink = false;
 
 //     text.classList.add('shrinked-div');
 // });
+
+function toggleDivVisibility(div) {
+    div.classList.toggle('d-none');
+}
+
+//Adds click toggle to every div.
+faqDivs.forEach(faqDiv => {
+    const toggledArea = faqDiv.querySelector('.question-toggle');
+
+    toggledArea.classList.toggle('d-none');
+
+    faqDiv.addEventListener(`click`, function() {
+        toggleDivVisibility(toggledArea);
+    });
+});
