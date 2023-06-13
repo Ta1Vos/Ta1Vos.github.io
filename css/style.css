@@ -40,7 +40,6 @@ body {
 .card-text {
     transition: 2s;
     overflow: hidden;
-    max-height: 50vh;
 }
 
 .shrinked-div {
