@@ -2,7 +2,7 @@ document.body.style.backgroundImage = `linear-gradient(${Math.round(Math.random(
 
 const projectCards = document.querySelectorAll('.project-card');
 
-const faqDivs = document.querySelectorAll('.faq-question');
+const collapsableDivs = document.querySelectorAll('.collapsable');//.faq-question
 
 let cancelDivShrink = false;
 
@@ -41,12 +41,13 @@ function toggleDivVisibility(div) {
 }
 
 //Adds click toggle to every div.
-faqDivs.forEach(faqDiv => {
-    const toggledArea = faqDiv.querySelector('.question-toggle');
+collapsableDivs.forEach(collapsableDiv => {
+    const toggleArea = collapsableDiv.querySelector('.collapsable-toggle');//question-toggle
+    const content = collapsableDiv.querySelector('.collapsable-content');
 
-    toggledArea.classList.toggle('d-none');
+    content.classList.toggle('d-none');
 
-    faqDiv.addEventListener(`click`, function() {
-        toggleDivVisibility(toggledArea);
+    toggleArea.addEventListener(`click`, function() {
+        toggleDivVisibility(content);
     });
 });
