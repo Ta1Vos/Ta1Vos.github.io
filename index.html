@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -24,7 +24,7 @@
             <div class="navbar-brand fs-4 menu-btn" id="home-page">Tim Vos Portfolio</div>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation"></button>
+                aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover d-flex align-items-center text-center">
                     <li class="col-0 col-lg-1"></li>
@@ -38,11 +38,14 @@
                     <li class="col-12 col-md-2 nav-item">
                         <div class="nav-link menu-btn">Contact <span class="visually-hidden"></span></div>
                     </li>
-                    <li class="col-12 col-md-2 nav-item">
+                    <li class="col-12 col-md-1 nav-item">
                         <div class="nav-link menu-btn">FAQ <span class="visually-hidden"></span></div>
                     </li>
                     <li class="col-12 col-md-2 nav-item">
                         <div class="nav-link menu-btn">About the Portfolio <span class="visually-hidden"></span></div>
+                    </li>
+                    <li class="col-12 col-md-1 nav-item">
+                        <div class="nav-link menu-btn">CV <span class="visually-hidden"></span></div>
                     </li>
                 </ul>
             </div>
@@ -58,17 +61,16 @@
     </header>
 
     <!-- Start load animation as soon as loading screen finishes loading -->
-    <script src="/js/loadAnimation.js"></script>
+    <script src="js/loadAnimation.js"></script>
 
     <main class="pt-5 mt-5">
         <div class="top-margin mt-5 mt-lg-2"></div>
         <div class="home-page page-0 page pb-5">
             <div class="row">
                 <div class="col-2"></div>
-                <div class="row col-8 text-center bg-brown p-lg-2 rounded-1">
-                    <div class="col-0 col-lg-1"></div>
+                <div class="row col-8 text-center bg-brown p-lg-2 pe-lg-4 rounded-1">
                     <div class="col-6 col-lg-3 bg-light m-auto">
-                        <img src="../img/profilePicture.png" class="img-fluid" alt="Image of Tim Vos">
+                        <img src="img/profilePicture.png" class="img-fluid" alt="Image of Tim Vos">
                     </div>
                     <div class="col-0 col-lg-1"></div>
                     <div class="col-12 col-lg-6 text-dark d-flex align-items-center">
@@ -84,7 +86,6 @@
                             I wish you a good time looking around my website!
                         </p>
                     </div>
-                    <div class="col-0 col-lg-1"></div>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -147,6 +148,19 @@
                             the Portfolio!!</div>
                     </div>
                 </div>
+                <div class="col-lg-12 my-lg-3">
+                </div>
+                <div class="col-12 col-lg-3 card m-3">
+                    <div class="card-body">
+                        <h4 class="card-title">CV</h4>
+                        <p>
+                            My current CV, containing some information about my experiences in the past.
+                        </p>
+                        <div data-value="6"
+                             class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                            CV page!</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="aboutme-page page-1 page pb-5 page-invisible">
@@ -167,13 +181,13 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-7 col-lg-5 text-center m-auto mt-3">
-                            <img src="../img/image2.png" class="w-50 img-fluid rounded-1" alt="Placeholder">
+                            <img src="img/image2.png" class="w-50 img-fluid rounded-1" alt="Placeholder">
                         </div>
                         <div class="col-0 col-lg-1"></div>
                     </div>
                     <div class="row mt-5 pt-3 d-flex align-items-center">
                         <div class="col-8 col-md-5 col-lg-4 m-auto mb-3">
-                            <img src="../img/schoolimage.jpg" class="img-fluid rounded-1" alt="Placeholder">
+                            <img src="img/schoolimage.jpg" class="img-fluid rounded-1" alt="Placeholder">
                         </div>
                         <div class="col-1"></div>
                         <div class="col-12 col-md-5">
@@ -290,7 +304,7 @@
                         <div class="project-card card col-12 m-3">
                             <div class="row g-0 d-flex">
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ProjectHL.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ProjectHL.png" class="img-fluid rounded border border-3"
                                         alt="Higher Lower Game Image">
                                 </div>
                                 <div class="col-md-8">
@@ -353,7 +367,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ProjectAlcatraz.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ProjectAlcatraz.png" class="img-fluid rounded border border-3"
                                         alt="Escape Room Alcatraz Image">
                                 </div>
                             </div>
@@ -361,7 +375,7 @@
                         <div class="project-card card col-12 m-3">
                             <div class="row g-0 d-flex">
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ProjectTicTacToe.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ProjectTicTacToe.png" class="img-fluid rounded border border-3"
                                         alt="TacTacToe img">
                                 </div>
                                 <div class="col-md-8">
@@ -377,8 +391,8 @@
                                                 win. The game would result in a tie until the player would make a
                                                 mistake.
                                             </p>
-                                            <small class="text-muted">(If you'd wish to try it out, you will have to
-                                                change the difficulty in the settings at the menu)</small><br>
+                                            <p class="text-muted">(If you'd wish to try it out, you will have to
+                                                change the difficulty in the settings at the menu)</p><br>
                                             <small>Programming languages used: HTML, CSS, quite some JavaScript</small>
                                         </div>
                                         <div class="row">
@@ -433,7 +447,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ProjectTPoTD.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ProjectTPoTD.png" class="img-fluid rounded border border-3"
                                         alt="The Path of The Dabloons img">
                                 </div>
                             </div>
@@ -441,7 +455,7 @@
                         <div class="project-card card col-12 m-3">
                             <div class="row g-0 d-flex">
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ProjectWebCatalogue.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ProjectWebCatalogue.png" class="img-fluid rounded border border-3"
                                         alt="Web catalogue img">
                                 </div>
                                 <div class="col-md-8">
@@ -456,9 +470,9 @@
                                             <p>This is the first project where I've learned about the JavaScript fetch
                                                 (getting information from databases). This can be seen in the clothing
                                                 categories.</p>
-                                            <small class="text-muted">I have made the contact page and the shoes
+                                            <p class="text-muted">I have made the contact page and the shoes
                                                 category in this
-                                                project.</small><br>
+                                                project.</p><br>
                                             <small>Programming languages used: HTML, CSS, Bootstrap(library), JavaScript</small>
                                         </div>
                                         <div class="row">
@@ -511,7 +525,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ColourMadness.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ColourMadness.png" class="img-fluid rounded border border-3"
                                         alt="Colour Madness Image">
                                 </div>
                             </div>
@@ -519,7 +533,7 @@
                         <div class="project-card card col-12 m-3">
                             <div class="row g-0 d-flex">
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/DungeonGame.png" class="img-fluid rounded border border-3"
+                                    <img src="img/DungeonGame.png" class="img-fluid rounded border border-3"
                                         alt="Image of the dungeon game.">
                                 </div>
                                 <div class="col-md-8">
@@ -592,7 +606,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="/img/ProjectDashboards.png" class="img-fluid rounded border border-3"
+                                    <img src="img/ProjectDashboards.png" class="img-fluid rounded border border-3"
                                         alt="Dashboard project img">
                                 </div>
                             </div>
@@ -631,7 +645,7 @@
                         <div class="col-lg-3 card mb-3 mt-5">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title"><i class="bi bi-github"></i> GitHub</h5>
-                                <p class="card-text">Find me and my projects on GitHub!.</p>
+                                <p class="card-text">Find me and my projects on GitHub!</p>
                                 <a href="https://github.com/Ta1Vos" target="_blank" class="btn btn-dark mt-auto">To
                                     GitHub (School)</a>
                             </div>
@@ -717,7 +731,7 @@
                     </div>
                     <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
                         <p>
-                            As mentioned in the Skills & Experience area at my <u>About Me</u> page, I am not that
+                            As mentioned in the Skills & Experience area at my <span data-value="1" class="text-primary redirect-btn">About Me</span> page, I am not that
                             skilled in the designing of a website, which includes colors. If I have to be honest, I have
                             just picked some random colors and see how far I could get with those, which resulted in the
                             color scheme of this website. (Which is in my own opinion, not too bad).
@@ -726,12 +740,12 @@
                     </div>
                     <div class="row d-flex align-items-center flex-direction-column">
                         <div class="col-12 col-lg-5 my-5">
-                            <img src="/img/colorScheme1.png" class="img-fluid mx-auto d-block rounded border border-3"
+                            <img src="img/colorScheme1.png" class="img-fluid mx-auto d-block rounded border border-3"
                                 alt="First color scheme">
                         </div>
                         <div class="col-2"></div>
                         <div class="col-12 col-lg-5">
-                            <img src="/img/colorScheme2.png" class="img-fluid mx-auto d-block rounded border border-3"
+                            <img src="img/colorScheme2.png" class="img-fluid mx-auto d-block rounded border border-3"
                                 alt="Second color scheme">
                         </div>
                     </div>
@@ -787,10 +801,26 @@
                     </div>
                     <div class="row d-flex align-items-center flex-direction-column">
                         <div class="col-12 my-5">
-                            <img src="/img/sitemap.png" class="img-fluid mx-auto d-block rounded border border-3"
+                            <img src="img/sitemap.png" class="img-fluid mx-auto d-block rounded border border-3"
                                 alt="First color scheme">
                         </div>
                     </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="cv page-6 page pb-5 page-invisible">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10 text-center">
+                    <div class="w-md-25-75 m-auto mb-5 bg-brown p-3 rounded-3">
+                        <p class="text-center fs-2 fw-bold m-auto">
+                            CV
+                        </p>
+                    </div>
+                    <img src="img/CV2.png" class="img-fluid mx-auto d-block rounded border border-3"
+                         alt="CV">
+                    <a href="./downloadable_files/CV2.pdf" download="Tim_Vos-CV" class="btn btn-dark bg-brown mt-3" type="button">Download PDF</a>
                 </div>
                 <div class="col"></div>
             </div>
@@ -808,8 +838,8 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
-    <script src="/js/pageAnimations.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/pageAnimations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
