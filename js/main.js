@@ -48,6 +48,9 @@ collapsableDivs.forEach(collapsableDiv => {
     content.classList.toggle('d-none');
 
     toggleArea.addEventListener(`click`, function() {
+        const arrow = toggleArea.querySelector('i');
+        console.log(arrow);
         toggleDivVisibility(content);
+        arrow.classList.toggle('toggled');
     });
 });
