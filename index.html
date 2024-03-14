@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
@@ -18,828 +18,1024 @@
 </head>
 
 <body>
-    <header>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md bg-orange z-0 fixed-top p-2 ps-4 z-3">
-            <div class="navbar-brand fs-4 menu-btn" id="home-page">Tim Vos Portfolio</div>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+<header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-orange z-0 fixed-top p-2 ps-4 z-3">
+        <div class="navbar-brand fs-4 menu-btn" id="home-page">Tim Vos Portfolio</div>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover d-flex align-items-center text-center">
-                    <li class="col-0 col-lg-1"></li>
-                    <li class="col-12 col-md-2 nav-item">
-                        <div class="nav-link menu-btn text-center" id="aboutme-page">About Me <span
-                                class="visually-hidden"></span></div>
-                    </li>
-                    <li class="col-12 col-md-2 nav-item">
-                        <div class="nav-link menu-btn">Projects <span class="visually-hidden"></span></div>
-                    </li>
-                    <li class="col-12 col-md-2 nav-item">
-                        <div class="nav-link menu-btn">Contact <span class="visually-hidden"></span></div>
-                    </li>
-                    <li class="col-12 col-md-1 nav-item">
-                        <div class="nav-link menu-btn">FAQ <span class="visually-hidden"></span></div>
-                    </li>
-                    <li class="col-12 col-md-2 nav-item">
-                        <div class="nav-link menu-btn">About the Portfolio <span class="visually-hidden"></span></div>
-                    </li>
-                    <li class="col-12 col-md-1 nav-item">
-                        <div class="nav-link menu-btn">CV <span class="visually-hidden"></span></div>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover d-flex align-items-center text-center">
+                <li class="col-0 col-lg-1"></li>
+                <li class="col-12 col-md-2 nav-item">
+                    <div class="nav-link menu-btn text-center" id="aboutme-page">About Me <span
+                            class="visually-hidden"></span></div>
+                </li>
+                <li class="col-12 col-md-2 nav-item">
+                    <div class="nav-link menu-btn">Projects <span class="visually-hidden"></span></div>
+                </li>
+                <li class="col-12 col-md-2 nav-item">
+                    <div class="nav-link menu-btn">Contact <span class="visually-hidden"></span></div>
+                </li>
+                <li class="col-12 col-md-1 nav-item">
+                    <div class="nav-link menu-btn">FAQ <span class="visually-hidden"></span></div>
+                </li>
+                <li class="col-12 col-md-2 nav-item">
+                    <div class="nav-link menu-btn">About the Portfolio <span class="visually-hidden"></span></div>
+                </li>
+                <li class="col-12 col-md-1 nav-item">
+                    <div class="nav-link menu-btn">CV <span class="visually-hidden"></span></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- loading screen -->
+    <div class="z-5 w-100 vh-100 bg-primary load-screen d-flex align-items-center justify-content-center fixed-top">
+        <div class="text-center">
+            <h1>Tim Vos Portfolio</h1>
+            <hr>
+            <h4 class="loading-text">Loading</h4>
+        </div>
+    </div>
+</header>
+
+<!-- Start load animation as soon as loading screen finishes loading -->
+<script src="js/loadAnimation.js"></script>
+
+<main class="pt-5 mt-5">
+    <div class="top-margin mt-5 mt-lg-2"></div>
+    <div class="home-page page-0 page pb-5">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="row col-8 text-center bg-brown p-lg-2 pe-lg-4 rounded-1">
+                <div class="col-6 col-lg-3 bg-light m-auto">
+                    <img src="img/profilePicture.png" class="img-fluid" alt="Image of Tim Vos">
+                </div>
+                <div class="col-0 col-lg-1"></div>
+                <div class="col-12 col-lg-6 text-dark d-flex align-items-center">
+                    <p class="bg-light border border-secondary rounded-1 p-2">
+                        Hello there! Welcome to my portfolio!<br><br>
+
+                        I'm Tim Vos and this is my portfolio site. I'm a student at ROC Mondriaan, currently
+                        following
+                        the study of Software Development.
+                        On this site you'll be able to find information about me, my projects and frequently asked
+                        questions.
+                        If necessary, you'll also be able to contact me on the contact page.
+                        I wish you a good time looking around my website!
+                    </p>
+                </div>
             </div>
-        </nav>
-        <!-- loading screen -->
-        <div class="z-5 w-100 vh-100 bg-primary load-screen d-flex align-items-center justify-content-center fixed-top">
-            <div class="text-center">
-                <h1>Tim Vos Portfolio</h1>
-                <hr>
-                <h4 class="loading-text">Loading</h4>
+            <div class="col-2"></div>
+        </div>
+        <div class="container-fluid row d-flex flex-row justify-content-center pt-5 mt-5">
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body">
+                    <h4 class="card-title">About me</h4>
+                    <p>
+                        Some information about myself!
+                    </p>
+                    <div data-value="1"
+                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
+                        Me!
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body">
+                    <h4 class="card-title">Projects</h4>
+                    <p>
+                        Projects I have made until now!
+                    </p>
+                    <div data-value="2"
+                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to
+                        Projects!
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 my-lg-3">
+            </div>
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body">
+                    <h4 class="card-title">Contact</h4>
+                    <p>
+                        If you're interested in business with me, you can find information to contact me here!
+                    </p>
+                    <div data-value="3"
+                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                        contact page!
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body">
+                    <h4 class="card-title">Frequently asked questions (FAQ)</h4>
+                    <p>
+                        If you have a question, it may have been answered multiple times already. You can find those
+                        here!
+                    </p>
+                    <div data-value="4"
+                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                        FAQ page!
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body">
+                    <h4 class="card-title">About the Portfolio</h4>
+                    <p>
+                        Information about this portfolio website, how its made, why its made!
+                    </p>
+                    <div data-value="5"
+                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
+                        the Portfolio!!
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 my-lg-3">
+            </div>
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body">
+                    <h4 class="card-title">CV</h4>
+                    <p>
+                        My current CV, containing some information about my experiences in the past.
+                    </p>
+                    <div data-value="6"
+                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                        CV page!
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- Start load animation as soon as loading screen finishes loading -->
-    <script src="js/loadAnimation.js"></script>
-
-    <main class="pt-5 mt-5">
-        <div class="top-margin mt-5 mt-lg-2"></div>
-        <div class="home-page page-0 page pb-5">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="row col-8 text-center bg-brown p-lg-2 pe-lg-4 rounded-1">
-                    <div class="col-6 col-lg-3 bg-light m-auto">
-                        <img src="img/profilePicture.png" class="img-fluid" alt="Image of Tim Vos">
+    </div>
+    <div class="aboutme-page page-1 page pb-5 page-invisible">
+        <div class="row mx-2">
+            <div class="col-sm-1"></div>
+            <div class="col-12 col-sm-10">
+                <div class="w-md-25-75 m-auto bg-brown p-3 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        About Me
+                    </p>
+                </div>
+                <div class="row mt-5 pt-3 d-flex align-items-center">
+                    <div class="col-0 col-lg-1"></div>
+                    <div class="col-12 col-md-5">
+                        <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
+                            Hi there! I'm Tim Vos and I'm <span class="age">16</span> years old! I live in the
+                            Netherlands, Zoetermeer.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-5 text-center m-auto mt-3">
+                        <img src="img/image2.png" class="w-50 img-fluid rounded-1" alt="Placeholder">
                     </div>
                     <div class="col-0 col-lg-1"></div>
-                    <div class="col-12 col-lg-6 text-dark d-flex align-items-center">
-                        <p class="bg-light border border-secondary rounded-1 p-2">
-                            Hello there! Welcome to my portfolio!<br><br>
-
-                            I'm Tim Vos and this is my portfolio site. I'm a student at ROC Mondriaan, currently
-                            following
-                            the study of Software Development.
-                            On this site you'll be able to find information about me, my projects and frequently asked
-                            questions.
-                            If necessary, you'll also be able to contact me on the contact page.
-                            I wish you a good time looking around my website!
-                        </p>
+                </div>
+                <div class="row mt-5 pt-3 d-flex align-items-center">
+                    <div class="col-8 col-md-5 col-lg-4 m-auto mb-3">
+                        <img src="img/schoolimage.jpg" class="img-fluid rounded-1" alt="Placeholder">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-md-5">
+                        <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
+                            I am currently following the study of Software Developer on MBO level 4 on the ROC
+                            Mondriaan. After this study I've planned to follow the study Game Developer. In this way
+                            I will walk into the world of programming with experience about web development.
+                        </div>
                     </div>
                 </div>
-                <div class="col-2"></div>
-            </div>
-            <div class="container-fluid row d-flex flex-row justify-content-center pt-5 mt-5">
-                <div class="col-12 col-lg-3 card m-3">
-                    <div class="card-body">
-                        <h4 class="card-title">About me</h4>
-                        <p>
-                            Some information about myself!
-                        </p>
-                        <div data-value="1"
-                            class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
-                            Me!</div>
+                <div class="row mt-5 pt-3">
+                    <div class="col-1"></div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
+                            As of now I am mostly learning Front-End development, but next year I will start to
+                            learn back-end programming and will learn advanced Front-End.
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 card m-3">
-                    <div class="card-body">
-                        <h4 class="card-title">Projects</h4>
-                        <p>
-                            Projects I have made until now!
-                        </p>
-                        <div data-value="2"
-                            class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to
-                            Projects!</div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-md-5 mt-4">
+                        <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
+                            <p>
+                                I myself, am a creative person in the aspect of code and can think of smaller
+                                details
+                                that fit with websites and games.
+                            </p>
+                            <p>
+                                Although I am great with the functionality of a website, I unfortunately do not have
+                                the ultimate skill of design.
+                            </p>
+                        </div>
                     </div>
+                    <div class="col-1"></div>
                 </div>
-                <div class="col-lg-12 my-lg-3">
+                <div class="w-md-25-75 m-auto bg-brown p-1 rounded-3 mt-5">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        Skills & Experience
+                    </p>
                 </div>
-                <div class="col-12 col-lg-3 card m-3">
-                    <div class="card-body">
-                        <h4 class="card-title">Contact</h4>
-                        <p>
-                            If you're interested in business with me, you can find information to contact me here!
-                        </p>
-                        <div data-value="3"
-                            class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
-                            contact page!</div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 card m-3">
-                    <div class="card-body">
-                        <h4 class="card-title">Frequently asked questions (FAQ)</h4>
-                        <p>
-                            If you have a question, it may have been answered multiple times already. You can find those
-                            here!
-                        </p>
-                        <div data-value="4"
-                            class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
-                            FAQ page!</div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 card m-3">
-                    <div class="card-body">
-                        <h4 class="card-title">About the Portfolio</h4>
-                        <p>
-                            Information about this portfolio website, how its made, why its made!
-                        </p>
-                        <div data-value="5"
-                            class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
-                            the Portfolio!!</div>
-                    </div>
-                </div>
-                <div class="col-lg-12 my-lg-3">
-                </div>
-                <div class="col-12 col-lg-3 card m-3">
-                    <div class="card-body">
-                        <h4 class="card-title">CV</h4>
-                        <p>
-                            My current CV, containing some information about my experiences in the past.
-                        </p>
-                        <div data-value="6"
-                             class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
-                            CV page!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutme-page page-1 page pb-5 page-invisible">
-            <div class="row mx-2">
-                <div class="col-sm-1"></div>
-                <div class="col-12 col-sm-10">
-                    <div class="w-md-25-75 m-auto bg-brown p-3 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            About Me
-                        </p>
-                    </div>
-                    <div class="row mt-5 pt-3 d-flex align-items-center">
-                        <div class="col-0 col-lg-1"></div>
-                        <div class="col-12 col-md-5">
-                            <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
-                                Hi there! I'm Tim Vos and I'm <span class="age">16</span> years old! I live in the
-                                Netherlands, Zoetermeer.
+                <div class="row p-1 mt-5 d-flex">
+                    <ul class="col-12 col-md-5 col-lg-4 p-3 bg-brown rounded-3">
+                        <li class="list-group-item fs-4">Technical skills</li>
+                        <li class="list-group-item my-2 rounded">
+                            HTML
+                            <div class="progress">
+                                <div class="progress-bar html-progress-bar bg-danger rounded"></div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-7 col-lg-5 text-center m-auto mt-3">
-                            <img src="img/image2.png" class="w-50 img-fluid rounded-1" alt="Placeholder">
-                        </div>
-                        <div class="col-0 col-lg-1"></div>
-                    </div>
-                    <div class="row mt-5 pt-3 d-flex align-items-center">
-                        <div class="col-8 col-md-5 col-lg-4 m-auto mb-3">
-                            <img src="img/schoolimage.jpg" class="img-fluid rounded-1" alt="Placeholder">
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-12 col-md-5">
-                            <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
-                                I am currently following the study of Software Developer on MBO level 4 on the ROC
-                                Mondriaan. After this study I've planned to follow the study Game Developer. In this way
-                                I will walk into the world of programming with experience about web development.
+                        </li>
+                        <li class="list-group-item my-2 rounded">
+                            CSS
+                            <div class="progress">
+                                <div class="progress-bar css-progress-bar rounded"></div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5 pt-3">
-                        <div class="col-1"></div>
-                        <div class="col-12 col-md-4 mb-4">
-                            <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
-                                As of now I am mostly learning Front-End development, but next year I will start to
-                                learn back-end programming and will learn advanced Front-End.
-                            </div>
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-12 col-md-5 mt-4">
-                            <div class="rounded-2 bg-light border border-1 border-dark text-center p-4">
-                                <p>
-                                    I myself, am a creative person in the aspect of code and can think of smaller
-                                    details
-                                    that fit with websites and games.
-                                </p>
-                                <p>
-                                    Although I am great with the functionality of a website, I unfortunately do not have
-                                    the ultimate skill of design.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
-                    <div class="w-md-25-75 m-auto bg-brown p-1 rounded-3 mt-5">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            Skills & Experience
-                        </p>
-                    </div>
-                    <div class="row p-1 mt-5 d-flex">
-                        <ul class="col-12 col-md-5 col-lg-4 p-3 bg-brown rounded-3">
-                            <li class="list-group-item fs-4">Technical skills</li>
-                            <li class="list-group-item my-2 rounded">
-                                HTML
-                                <div class="progress">
-                                    <div class="progress-bar html-progress-bar bg-danger rounded"></div>
-                                </div>
-                            </li>
-                            <li class="list-group-item my-2 rounded">
-                                CSS
-                                <div class="progress">
-                                    <div class="progress-bar css-progress-bar rounded"></div>
-                                </div>
-                            </li>
-                            <li class="list-group-item my-2 rounded">
-                                Bootstrap
-                                <div class="progress">
-                                    <div
+                        </li>
+                        <li class="list-group-item my-2 rounded">
+                            Bootstrap
+                            <div class="progress">
+                                <div
                                         class="progress-bar bs-progress-bar bg-danger-subtle border border-danger rounded">
-                                    </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item my-2 rounded">
-                                JavaScript
-                                <div class="progress">
-                                    <div class="progress-bar js-progress-bar bg-warning rounded"></div>
-                                </div>
-                            </li>
-                            <li class="list-group-item fs-4">Overall skills</li>
-                            <li class="list-group-item my-2 rounded">
-                                Design
-                                <div class="progress">
-                                    <div class="progress-bar design-progress-bar bg-info rounded"></div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="col-0 col-md-2"></div>
-                        <div
+                            </div>
+                        </li>
+                        <li class="list-group-item my-2 rounded">
+                            JavaScript
+                            <div class="progress">
+                                <div class="progress-bar js-progress-bar bg-warning rounded"></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item fs-4">Overall skills</li>
+                        <li class="list-group-item my-2 rounded">
+                            Design
+                            <div class="progress">
+                                <div class="progress-bar design-progress-bar bg-info rounded"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="col-0 col-md-2"></div>
+                    <div
                             class="col-12 col-md-5 col-lg-4 align-self-center p-3 bg-white border border-danger rounded-3">
-                            <p>
-                                As of now, I <u>do not</u> have experience with any kind of company. In the future I
-                                will add a list with experiences.
-                            </p>
-                            <ul></ul>
-                            <p>
-                                Apart from the companies, I am able to show projects I have made, which can be found at
-                                the <span data-value="2" class="text-primary redirect-btn">project page</span>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-1"></div>
-            </div>
-        </div>
-        <div class="project-page page-2 page pb-5 page-invisible">
-            <div class="alert alert-info alert-dismissible fade show fixed-bottom" role="alert">
-                <strong>Note:</strong> Not all projects are ready yet, you will be able to see most of them, but a few
-                are still missing.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="row mx-2 mx-sm-0">
-                <div class="col-0 col-sm-2"></div>
-                <div class="col-12 col-sm-8">
-                    <div class="row">
-                        <div class="col-2 col-md-4"></div>
-                        <div class="col-8 col-md-4 m-auto bg-brown p-3 rounded-3 text-center">
-                            <p class="fs-2 fw-bold m-auto">
-                                Projects
-                            </p>
-                        </div>
-                        <div class="col-2 col-md-4"></div>
-                    </div>
-                    <div class="row py-5 d-flex justify-content-center">
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ProjectHL.png" class="img-fluid rounded border border-3"
-                                        alt="Higher Lower Game Image">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Higher Lower</h5>
-                                        <div class="card-text">
-                                            <p>Higher lower is my first project at ROC Mondriaan, which is a gambling
-                                                game.</p>
-                                            <p>With just little access to the internet I've managed to assemble a
-                                                simple-designed, yet high functional gambling game.</p>
-                                            <p>I've made this gambling game with pure CSS, HTML & JavaScript. I didn't
-                                                have the knowledge over Bootstrap or any other
-                                                libraries.<br>
-                                                I have challenged myself to make an advanced game from its beginning,
-                                                and with the use of the web and the helpful teacher,
-                                                I have been able to create a game with such functionality as a started.
-                                            </p>
-                                            <small>Programming languages used: HTML, CSS, JavaScript</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="btn btn-primary" href="https://ta1vos.github.io/HogerLager/"
-                                                    role="button" target="_blank">Take me to this project!</a><br>
-                                                <small>(This project has been written in Dutch)</small>
-                                            </div>
-                                            <div class="col-md-8"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Alcatraz Escape Room</h5>
-                                        <div class="card-text">
-                                            <p>At the end of period 1, we had been challenged to create a digital
-                                                escaperoom in 1 week by our teachers.</p>
-                                            <p>This is the first project where I have officially worked in a team,
-                                                although upon reflection upon this project, I've found
-                                                some aspects I had to improve in.</p>
-                                            <p><u>Teamwork:</u> In this project there has been a lack of communication
-                                                and task division
-                                                inbetween the teammembers, me included. We did have our own parts we
-                                                worked on.</p>
-                                            <p>Teamwork has been an issue for me for a much longer time, but I wish to
-                                                improve that in upcoming projects & other experiences, so it won't be a
-                                                struggle for the future.</p>
-                                            <small>Programming languages used: HTML, CSS, JavaScript</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8"></div>
-                                            <div class="col-md-4">
-                                                <a class="btn btn-dark" href="https://ta1vos.github.io/escapeRoomGame/"
-                                                    role="button" target="_blank">Take me to this project!</a><br>
-                                                <small>(This project has been written in Dutch)</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ProjectAlcatraz.png" class="img-fluid rounded border border-3"
-                                        alt="Escape Room Alcatraz Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ProjectTicTacToe.png" class="img-fluid rounded border border-3"
-                                        alt="TacTacToe img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">TicTacToe</h5>
-                                        <div class="card-text">
-                                            <p>TicTacToe is the third project I have made. I've made it throughout my
-                                                second period of school.</p>
-                                            <p>This is, once again, a solo project I have made myself.</p>
-                                            <p>One thing I'm proud of for this project, is that I have made an algorithm
-                                                you can play against (called the computer).
-                                                Its practically impossible to beat it as it covers all ways you could
-                                                win. The game would result in a tie until the player would make a
-                                                mistake.
-                                            </p>
-                                            <p class="text-muted">(If you'd wish to try it out, you will have to
-                                                change the difficulty in the settings at the menu)</p><br>
-                                            <small>Programming languages used: HTML, CSS, quite some JavaScript</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="btn btn-warning"
-                                                    href="https://ta1vos.github.io/TicTacToeGame/" role="button"
-                                                    target="_blank">Take me to this project!</a><br>
-                                                <small>(This project has been written in Dutch)</small>
-                                            </div>
-                                            <div class="col-md-8"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">The Path of The Dabloons (Custom project)</h5>
-                                        <div class="card-text">
-                                            <p>The path of Dabloons is an RNG-based game (highly inspired from the
-                                                dabloon memes) I have made at the end of period 2. This is a two-week
-                                                project, which would be called
-                                                'battle of the JavaScript'. For this project we had to think of a
-                                                concept and make it have a lot of functionality with JS.
-                                            </p>
-                                            <p>
-                                                This project had to be solo made and pretty much anything was allowed as
-                                                long as you could explain the code.
-                                            </p>
-                                            <p>
-                                                For this project I have challenged myself a lot, thinking of many
-                                                solutions and possibilities I could make with JavaScript.
-                                                I discovered new things like: promises, executing functions through
-                                                strings, and more!
-                                            </p>
-                                            <p>
-                                                Perhaps I'll work further on this one day, but for now I still have
-                                                large projects for school.
-                                            </p>
-                                            <small>Programming languages used: HTML, CSS, lots of JavaScript</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8"></div>
-                                            <div class="col-md-4">
-                                                <a class="btn btn-success"
-                                                    href="https://ta1vos.github.io/thePathOfTheDabloons/" role="button"
-                                                    target="_blank">Take me to this project!</a><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ProjectTPoTD.png" class="img-fluid rounded border border-3"
-                                        alt="The Path of The Dabloons img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ProjectWebCatalogue.png" class="img-fluid rounded border border-3"
-                                        alt="Web catalogue img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">ROC Mondriaan clothing web catalogue</h5>
-                                        <div class="card-text">
-                                            <p>This is the 5th project I have made (in period 3). This is the first
-                                                project where I
-                                                officially worked as a team with classmates.</p>
-                                            <p>For this project we had to make a clothing website, where everyone made 1
-                                                regular page and 1 clothing category.</p>
-                                            <p>This is the first project where I've learned about the JavaScript fetch
-                                                (getting information from databases). This can be seen in the clothing
-                                                categories.</p>
-                                            <p class="text-muted">I have made the contact page and the shoes
-                                                category in this
-                                                project.</p><br>
-                                            <small>Programming languages used: HTML, CSS, Bootstrap(library), JavaScript</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="btn btn-light border border-3"
-                                                    href="https://ta1vos.github.io/RunningClothesWebcatalogue/"
-                                                    role="button" target="_blank">Take me to this project!</a><br>
-                                                <small>(This project has been written in Dutch)</small>
-                                            </div>
-                                            <div class="col-md-8"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Colour Madness</h5>
-                                        <div class="card-text">
-                                            <p>This is another project I have worked on in period 3. This was for an
-                                                elective part of my study, called Game Production.</p>
-                                            <p>For this I had to investigate on how to create a game, while also
-                                                investigating what to make. It made me think no second about a concept
-                                                I've wanted to make reality for a long time.<br>
-                                                And yet, here it is!</p>
-                                            <p>This is the first time I have interacted a lot with a JavaScript
-                                                library.<br>
-                                                I have used <a target="_blank" href="https://phaser.io/">Phaser</a> in
-                                                order to make my
-                                                concept reality.</p>
-                                            <p>When looking at certain topics/concepts, I can find myself loads and
-                                                loads of motivation and inspiration to the point I just can't stop
-                                                thinking about adding more and more. Just add that little asset, oh
-                                                wait! not to forget that other very puzzling asset!</p>
-                                            <p>For most of my school projects I have managed to keep challenging myself
-                                                to keep adding more until I reach the deadline, of which I had fun too.
-                                            </p>
-                                            <small>Programming languages used: HTML, JavaScript, Phaser JS(library)</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8"></div>
-                                            <div class="col-md-4">
-                                                <a class="btn btn-danger bg-danger-subtle text-danger"
-                                                    href="https://ta1vos.github.io/ColourMadness/" role="button"
-                                                    target="_blank">Take me to this project!</a><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ColourMadness.png" class="img-fluid rounded border border-3"
-                                        alt="Colour Madness Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/DungeonGame.png" class="img-fluid rounded border border-3"
-                                        alt="Image of the dungeon game.">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Funni dungeon novel gaem</h5>
-                                        <div class="card-text">
-                                            <p>This is the 2nd project I have made for the elective part Game
-                                                Production. This time it is a co-operative project.</p>
-                                            <p>For this we had to pick (or combine) our ideas/concepts we have made for
-                                                the previous project to make a new game.</p>
-                                            <p>We decided to use 2 engines in one, one being Phaser and the other one
-                                                being Renpy.</p>
-                                            <p>I have worked on the phaser part with someone else, as we were the only
-                                                ones who had picked phaser in the previous project. I have created most
-                                                of the game's functional assets. <small>(Player, enemies, attacks,
-                                                    spells)</small> While the other person kept busy with the tilemap
-                                                and its collisions.</p>
-                                            <p>We brainstormed the first few classes in order to make a nice concept for
-                                                a new game, which we eventually have gotten. A dungeon/magic game.</p>
-                                            <p>You have to cast spells in order to defeat the enemies (which are capable
-                                                of using physical moves too)</p>
-                                            <p>Unfortunately, we greatly overestimated this project, and many features
-                                                had to be left out to make the deadline.</p>
-                                            <small>Programming languages used: HTML, a little bit of CSS,
-                                                JavaScript, Phaser JS(library)</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="btn btn-info bg-info-subtle text-primary" href="https://ta1vos.github.io/dungeonGame"
-                                                    role="button" target="_blank">Take me to this project!</a><br>
-                                            </div>
-                                            <div class="col-md-8"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card card col-12 m-3">
-                            <div class="row g-0 d-flex">
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">ROC Mondriaan dashboards</h5>
-                                        <div class="card-text">
-                                            <p>This is the 6th project, in period 4, which is also the last project of
-                                                year one. In this team I work, once again, officially in a team.</p>
-                                            <p>
-                                                Like the last project, we had to make 1 regular page and 1 dashboard
-                                                (which shows information about certain things).
-                                            </p>
-                                            <p>
-                                                On this project, I have made the chatbot and the kassabon (receipt)
-                                                dashboard.
-                                                In this period, new things weren't introduced, it was mostly repeating
-                                                everything what we've learned in the past 3 periods.
-                                                In this project I did make use of <a href="https://www.chartjs.org/"
-                                                    class="clickable" target="_blank">ChartJS</a>.
-                                            </p>
-                                            <small>Programming languages used: HTML, CSS, Bootstrap(library), JavaScript, Chart
-                                                JS(library)</small>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8"></div>
-                                            <div class="col-md-4">
-                                                <a class="btn btn-primary bg-primary-subtle text-primary"
-                                                    href="https://ta1vos.github.io/rocmDashboards/" role="button"
-                                                    target="_blank">Take me to this project!</a><br>
-                                                <small>(This project has been written in Dutch)</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 align-self-center">
-                                    <img src="img/ProjectDashboards.png" class="img-fluid rounded border border-3"
-                                        alt="Dashboard project img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-0 col-sm-2"></div>
-            </div>
-        </div>
-        <div class="contact-page page-3 page pb-5 page-invisible">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div class="w-md-25-75 m-auto bg-brown p-3 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            Contact
-                        </p>
-                    </div>
-                    <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 pb-1 bg-light rounded-3">
                         <p>
-                            Welcome to the contact page! In case you're interested in hiring me or if have questions for
-                            me, feel
-                            free to contact me by using one of the options listed below!
+                            As of now, I <u>do not</u> have experience with any kind of company. In the future I
+                            will add a list with experiences.
                         </p>
-                    </div>
-                    <div class="row d-flex align-items-lg-stretch text-center column-gap-4 px-md-5 px-lg-0">
-                        <div class="col"></div>
-                        <div class="col-lg-3 card mb-3 mt-5">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><i class="bi bi-linkedin text-primary"></i> LinkedIn</h5>
-                                <p class="card-text">Find me on LinkedIn!</p>
-                                <a href="https://www.linkedin.com/in/tim-vos-01610a273" target="_blank"
-                                    class="btn btn-primary mt-auto">To LinkedIn</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 card mb-3 mt-5">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><i class="bi bi-github"></i> GitHub</h5>
-                                <p class="card-text">Find me and my projects on GitHub!</p>
-                                <a href="https://github.com/Ta1Vos" target="_blank" class="btn btn-dark mt-auto">To
-                                    GitHub (School)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 card mb-3 mt-5">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Discord <i class="bi bi-discord text-primary"></i></h5>
-                                <p class="card-text">Ask questions on discord!</p>
-                                <a href="#" class="btn btn-dark bg-white text-dark mt-auto">Work in Progress!</a>
-                            </div>
-                        </div>
-                        <div class="col"></div>
+                        <ul></ul>
+                        <p>
+                            Apart from the companies, I am able to show projects I have made, which can be found at
+                            the <span data-value="2" class="text-primary redirect-btn">project page</span>.
+                        </p>
                     </div>
                 </div>
-                <div class="col-2"></div>
             </div>
+            <div class="col-sm-1"></div>
         </div>
-        <div class="faq-page page-4 page pb-5 page-invisible">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 m-auto px-4">
-                    <div class="w-sm-100 w-md-50-75 m-auto bg-brown p-3 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            Frequently asked questions
+    </div>
+    <div class="project-page page-2 page pb-5 page-invisible">
+        <div class="alert alert-info alert-dismissible fade show fixed-bottom" role="alert">
+            <strong>Note:</strong> Not all projects are ready yet, you will be able to see most of them, but a few
+            are still missing.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="row mx-2 mx-sm-0">
+            <div class="col-0 col-sm-2"></div>
+            <div class="col-12 col-sm-8">
+                <div class="row">
+                    <div class="col-2 col-md-4"></div>
+                    <div class="col-8 col-md-4 m-auto bg-brown p-3 rounded-3 text-center">
+                        <p class="fs-2 fw-bold m-auto">
+                            Projects
                         </p>
                     </div>
-                    <div class="question-container mt-5">
-                        <div class="collapsable mt-5">
+                    <div class="col-2 col-md-4"></div>
+                </div>
+                <div class="row py-5 d-flex justify-content-center">
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
                             <div class="card">
                                 <div class="card-header collapsable-toggle p-3 fs-5">
-                                    Will this page get updated often?
+                                    <div class="row">
+                                        <div class="col">Higher Lower</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ProjectHL.png" class="img-fluid rounded border border-3"
+                                                 alt="Higher Lower Game Image">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Higher Lower</h5>
+                                                <div class="card-text">
+                                                    <p>Higher lower is my first project at ROC Mondriaan, which is a
+                                                        gambling
+                                                        game.</p>
+                                                    <p>With just little access to the internet I've managed to assemble
+                                                        a
+                                                        simple-designed, yet high functional gambling game.</p>
+                                                    <p>I've made this gambling game with pure CSS, HTML & JavaScript. I
+                                                        didn't
+                                                        have the knowledge over Bootstrap or any other
+                                                        libraries.<br>
+                                                        I have challenged myself to make an advanced game from its
+                                                        beginning,
+                                                        and with the use of the web and the helpful teacher,
+                                                        I have been able to create a game with such functionality as a
+                                                        started.
+                                                    </p>
+                                                    <small>Programming languages used: HTML, CSS, JavaScript</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-primary"
+                                                           href="https://ta1vos.github.io/HogerLager/"
+                                                           role="button" target="_blank">Take me to this
+                                                            project!</a><br>
+                                                        <small>(This project has been written in Dutch)</small>
+                                                    </div>
+                                                    <div class="col-md-7"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">Alcatraz Escape Room</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Alcatraz Escape Room</h5>
+                                                <div class="card-text">
+                                                    <p>At the end of period 1, we had been challenged to create a
+                                                        digital
+                                                        escaperoom in 1 week by our teachers.</p>
+                                                    <p>This is the first project where I have officially worked in a
+                                                        team,
+                                                        although upon reflection upon this project, I've found
+                                                        some aspects I had to improve in.</p>
+                                                    <p><u>Teamwork:</u> In this project there has been a lack of
+                                                        communication
+                                                        and task division
+                                                        inbetween the teammembers, me included. We did have our own
+                                                        parts we
+                                                        worked on.</p>
+                                                    <p>Teamwork has been an issue for me for a much longer time, but I
+                                                        wish to
+                                                        improve that in upcoming projects & other experiences, so it
+                                                        won't be a
+                                                        struggle for the future.</p>
+                                                    <small>Programming languages used: HTML, CSS, JavaScript</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8"></div>
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-dark"
+                                                           href="https://ta1vos.github.io/escapeRoomGame/"
+                                                           role="button" target="_blank">Take me to this
+                                                            project!</a><br>
+                                                        <small>(This project has been written in Dutch)</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ProjectAlcatraz.png" class="img-fluid rounded border border-3"
+                                                 alt="Escape Room Alcatraz Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">TicTacToe</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ProjectTicTacToe.png"
+                                                 class="img-fluid rounded border border-3"
+                                                 alt="TacTacToe img">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">TicTacToe</h5>
+                                                <div class="card-text">
+                                                    <p>TicTacToe is the third project I have made. I've made it
+                                                        throughout my
+                                                        second period of school.</p>
+                                                    <p>This is, once again, a solo project I have made myself.</p>
+                                                    <p>One thing I'm proud of for this project, is that I have made an
+                                                        algorithm
+                                                        you can play against (called the computer).
+                                                        Its practically impossible to beat it as it covers all ways you
+                                                        could
+                                                        win. The game would result in a tie until the player would make
+                                                        a
+                                                        mistake.
+                                                    </p>
+                                                    <p class="text-muted">(If you'd wish to try it out, you will have to
+                                                        change the difficulty in the settings at the menu)</p><br>
+                                                    <small>Programming languages used: HTML, CSS, quite some
+                                                        JavaScript</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-warning"
+                                                           href="https://ta1vos.github.io/TicTacToeGame/" role="button"
+                                                           target="_blank">Take me to this project!</a><br>
+                                                        <small>(This project has been written in Dutch)</small>
+                                                    </div>
+                                                    <div class="col-md-8"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">The Path Of The Dabloons</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The Path of The Dabloons (Custom project)</h5>
+                                                <div class="card-text">
+                                                    <p>The path of Dabloons is an RNG-based game (highly inspired from
+                                                        the
+                                                        dabloon memes) I have made at the end of period 2. This is a
+                                                        two-week
+                                                        project, which would be called
+                                                        'battle of the JavaScript'. For this project we had to think of
+                                                        a
+                                                        concept and make it have a lot of functionality with JS.
+                                                    </p>
+                                                    <p>
+                                                        This project had to be solo made and pretty much anything was
+                                                        allowed as
+                                                        long as you could explain the code.
+                                                    </p>
+                                                    <p>
+                                                        For this project I have challenged myself a lot, thinking of
+                                                        many
+                                                        solutions and possibilities I could make with JavaScript.
+                                                        I discovered new things like: promises, executing functions
+                                                        through
+                                                        strings, and more!
+                                                    </p>
+                                                    <p>
+                                                        Perhaps I'll work further on this one day, but for now I still
+                                                        have
+                                                        large projects for school.
+                                                    </p>
+                                                    <small>Programming languages used: HTML, CSS, lots of
+                                                        JavaScript</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8"></div>
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-success"
+                                                           href="https://ta1vos.github.io/thePathOfTheDabloons/"
+                                                           role="button"
+                                                           target="_blank">Take me to this project!</a><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ProjectTPoTD.png" class="img-fluid rounded border border-3"
+                                                 alt="The Path of The Dabloons img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">ROC Mondriaan clothing web catalogue</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ProjectWebCatalogue.png"
+                                                 class="img-fluid rounded border border-3"
+                                                 alt="Web catalogue img">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ROC Mondriaan clothing web catalogue</h5>
+                                                <div class="card-text">
+                                                    <p>This is the 5th project I have made (in period 3). This is the
+                                                        first
+                                                        project where I
+                                                        officially worked as a team with classmates.</p>
+                                                    <p>For this project we had to make a clothing website, where
+                                                        everyone made 1
+                                                        regular page and 1 clothing category.</p>
+                                                    <p>This is the first project where I've learned about the JavaScript
+                                                        fetch
+                                                        (getting information from databases). This can be seen in the
+                                                        clothing
+                                                        categories.</p>
+                                                    <p class="text-muted">I have made the contact page and the shoes
+                                                        category in this
+                                                        project.</p><br>
+                                                    <small>Programming languages used: HTML, CSS, Bootstrap(library),
+                                                        JavaScript</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-light border border-3"
+                                                           href="https://ta1vos.github.io/RunningClothesWebcatalogue/"
+                                                           role="button" target="_blank">Take me to this
+                                                            project!</a><br>
+                                                        <small>(This project has been written in Dutch)</small>
+                                                    </div>
+                                                    <div class="col-md-8"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">Colour Madness</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Colour Madness</h5>
+                                                <div class="card-text">
+                                                    <p>This is another project I have worked on in period 3. This was
+                                                        for an
+                                                        elective part of my study, called Game Production.</p>
+                                                    <p>For this I had to investigate on how to create a game, while also
+                                                        investigating what to make. It made me think no second about a
+                                                        concept
+                                                        I've wanted to make reality for a long time.<br>
+                                                        And yet, here it is!</p>
+                                                    <p>This is the first time I have interacted a lot with a JavaScript
+                                                        library.<br>
+                                                        I have used <a target="_blank"
+                                                                       href="https://phaser.io/">Phaser</a> in
+                                                        order to make my
+                                                        concept reality.</p>
+                                                    <p>When looking at certain topics/concepts, I can find myself loads
+                                                        and
+                                                        loads of motivation and inspiration to the point I just can't
+                                                        stop
+                                                        thinking about adding more and more. Just add that little asset,
+                                                        oh
+                                                        wait! not to forget that other very puzzling asset!</p>
+                                                    <p>For most of my school projects I have managed to keep challenging
+                                                        myself
+                                                        to keep adding more until I reach the deadline, of which I had
+                                                        fun too.
+                                                    </p>
+                                                    <small>Programming languages used: HTML, JavaScript, Phaser
+                                                        JS(library)</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8"></div>
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-danger bg-danger-subtle text-danger"
+                                                           href="https://ta1vos.github.io/ColourMadness/" role="button"
+                                                           target="_blank">Take me to this project!</a><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ColourMadness.png" class="img-fluid rounded border border-3"
+                                                 alt="Colour Madness Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">Funni dungeon novel gaem</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/DungeonGame.png" class="img-fluid rounded border border-3"
+                                                 alt="Image of the dungeon game.">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Funni dungeon novel gaem</h5>
+                                                <div class="card-text">
+                                                    <p>This is the 2nd project I have made for the elective part Game
+                                                        Production. This time it is a co-operative project.</p>
+                                                    <p>For this we had to pick (or combine) our ideas/concepts we have
+                                                        made for
+                                                        the previous project to make a new game.</p>
+                                                    <p>We decided to use 2 engines in one, one being Phaser and the
+                                                        other one
+                                                        being Renpy.</p>
+                                                    <p>I have worked on the phaser part with someone else, as we were
+                                                        the only
+                                                        ones who had picked phaser in the previous project. I have
+                                                        created most
+                                                        of the game's functional assets. <small>(Player, enemies,
+                                                            attacks,
+                                                            spells)</small> While the other person kept busy with the
+                                                        tilemap
+                                                        and its collisions.</p>
+                                                    <p>We brainstormed the first few classes in order to make a nice
+                                                        concept for
+                                                        a new game, which we eventually have gotten. A dungeon/magic
+                                                        game.</p>
+                                                    <p>You have to cast spells in order to defeat the enemies (which are
+                                                        capable
+                                                        of using physical moves too)</p>
+                                                    <p>Unfortunately, we greatly overestimated this project, and many
+                                                        features
+                                                        had to be left out to make the deadline.</p>
+                                                    <small>Programming languages used: HTML, a little bit of CSS,
+                                                        JavaScript, Phaser JS(library)</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-info bg-info-subtle text-primary"
+                                                           href="https://ta1vos.github.io/dungeonGame"
+                                                           role="button" target="_blank">Take me to this
+                                                            project!</a><br>
+                                                    </div>
+                                                    <div class="col-md-8"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card col-12 m-3 p-0">
+                        <div class="collapsable">
+                            <div class="card">
+                                <div class="card-header collapsable-toggle p-3 fs-5">
+                                    <div class="row">
+                                        <div class="col">ROC Mondriaan dashboards</div>
+                                        <div class="arrow-container col d-flex justify-content-end">
+                                            <i class="bi bi-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                        class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
+                                    <div class="row g-0 d-flex">
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ROC Mondriaan dashboards</h5>
+                                                <div class="card-text">
+                                                    <p>This is the 6th project, in period 4, which is also the last
+                                                        project of
+                                                        year one. In this team I work, once again, officially in a
+                                                        team.</p>
+                                                    <p>
+                                                        Like the last project, we had to make 1 regular page and 1
+                                                        dashboard
+                                                        (which shows information about certain things).
+                                                    </p>
+                                                    <p>
+                                                        On this project, I have made the chatbot and the kassabon
+                                                        (receipt)
+                                                        dashboard.
+                                                        In this period, new things weren't introduced, it was mostly
+                                                        repeating
+                                                        everything what we've learned in the past 3 periods.
+                                                        In this project I did make use of <a
+                                                            href="https://www.chartjs.org/"
+                                                            class="clickable" target="_blank">ChartJS</a>.
+                                                    </p>
+                                                    <small>Programming languages used: HTML, CSS, Bootstrap(library),
+                                                        JavaScript,
+                                                        Chart
+                                                        JS(library)</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8"></div>
+                                                    <div class="col-md-4">
+                                                        <a class="btn btn-primary bg-primary-subtle text-primary"
+                                                           href="https://ta1vos.github.io/rocmDashboards/" role="button"
+                                                           target="_blank">Take me to this project!</a><br>
+                                                        <small>(This project has been written in Dutch)</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 align-self-center">
+                                            <img src="img/ProjectDashboards.png"
+                                                 class="img-fluid rounded border border-3"
+                                                 alt="Dashboard project img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-0 col-sm-2"></div>
+        </div>
+    </div>
+    <div class="contact-page page-3 page pb-5 page-invisible">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="w-md-25-75 m-auto bg-brown p-3 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        Contact
+                    </p>
+                </div>
+                <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 pb-1 bg-light rounded-3">
+                    <p>
+                        Welcome to the contact page! In case you're interested in hiring me or if have questions for
+                        me, feel
+                        free to contact me by using one of the options listed below!
+                    </p>
+                </div>
+                <div class="row d-flex align-items-lg-stretch text-center column-gap-4 px-md-5 px-lg-0">
+                    <div class="col"></div>
+                    <div class="col-lg-3 card mb-3 mt-5">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><i class="bi bi-linkedin text-primary"></i> LinkedIn</h5>
+                            <p class="card-text">Find me on LinkedIn!</p>
+                            <a href="https://www.linkedin.com/in/tim-vos-01610a273" target="_blank"
+                               class="btn btn-primary mt-auto">To LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card mb-3 mt-5">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><i class="bi bi-github"></i> GitHub</h5>
+                            <p class="card-text">Find me and my projects on GitHub!</p>
+                            <a href="https://github.com/Ta1Vos" target="_blank" class="btn btn-dark mt-auto">To
+                                GitHub (School)</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card mb-3 mt-5">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Discord <i class="bi bi-discord text-primary"></i></h5>
+                            <p class="card-text">Ask questions on discord!</p>
+                            <a href="#" class="btn btn-dark bg-white text-dark mt-auto">Work in Progress!</a>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="faq-page page-4 page pb-5 page-invisible">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 m-auto px-4">
+                <div class="w-sm-100 w-md-50-75 m-auto bg-brown p-3 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        Frequently asked questions
+                    </p>
+                </div>
+                <div class="question-container mt-5">
+                    <div class="collapsable mt-5">
+                        <div class="card">
+                            <div class="card-header collapsable-toggle p-3 fs-5">
+                                Will this page get updated often?
+                            </div>
+                            <div
                                     class="card-body collapsable-content bg-info-subtle border border-info border-info-subtle border-2 rounded-bottom">
-                                    <span class="fw-bold">Yes,</span> expect this page to be updated when a question is
-                                    asked multiple times to prevent repeating questions for me!
+                                <span class="fw-bold">Yes,</span> expect this page to be updated when a question is
+                                asked multiple times to prevent repeating questions for me!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="portfolio-page page-5 page pb-5 page-invisible">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+                <div class="w-md-25-75 m-auto bg-brown p-3 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        About the portfolio
+                    </p>
+                </div>
+                <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
+                    <p>
+                        Hello there! Fun to see that you're interested in the portfolio itself! On this page you can
+                        find information about the portfolio, its color schemes, inspirations and the sitemap of the
+                        portfolio!
+                    </p>
+                    <p>
+                        I've made this portfolio, (and an earlier/older version of this) for school exercises. The
+                        older version has been made with experience of just a few months, while this portfolio has
+                        been made with experience of about a year.
+                    </p>
+                    <p>
+                        In the first 2 periods of school I had to seek inspiration (and of course) create my first
+                        portfolio. I hadn't taken much time for this due to other school projects, but for this
+                        current portfolio I have, which resulted in me being able to add much more.
+                    </p>
+                    <p>
+                        <i>For the future:</i> <br>
+                        You may see this portfolio get changed over the course of time when I learn more about
+                        JavaScript/HTML/CSS or even new programming languages. I may work on it when I have time
+                        available, to add more (and fun) features to make this look more lively. But for now,
+                        <br><br>
+                        <i><u>I thank you for reading this and for visiting my portfolio.</u></i>
+                    </p>
+                </div>
+                <div class="w-md-25-75 m-auto my-5 bg-brown p-2 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        Color Schemes
+                    </p>
+                </div>
+                <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
+                    <p>
+                        As mentioned in the Skills & Experience area at my <span data-value="1"
+                                                                                 class="text-primary redirect-btn">About Me</span>
+                        page, I am not that
+                        skilled in the designing of a website, which includes colors. If I have to be honest, I have
+                        just picked some random colors and see how far I could get with those, which resulted in the
+                        color scheme of this website. (Which is in my own opinion, not too bad).
+                    </p>
+                    <p><i>You can see the color schemes in the 2 images below.</i></p>
+                </div>
+                <div class="row d-flex align-items-center flex-direction-column">
+                    <div class="col-12 col-lg-5 my-5">
+                        <img src="img/colorScheme1.png" class="img-fluid mx-auto d-block rounded border border-3"
+                             alt="First color scheme">
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-12 col-lg-5">
+                        <img src="img/colorScheme2.png" class="img-fluid mx-auto d-block rounded border border-3"
+                             alt="Second color scheme">
+                    </div>
+                </div>
+                <div class="w-md-25-75 m-auto my-5 bg-brown p-2 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        Inspirations
+                    </p>
+                </div>
+                <div class="card-group">
+                    <div class="card m-3 w-md-50-75 w-sm-100 rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/toyfightDotCo.png" class="img-fluid rounded" alt="Card title">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="https://toyfight.co/" target="_blank"
+                                       class="card-title fw-bold fs-5">Toyfight.co</a>
+                                    <p class="card-text">This website has mostly inspired me to add the scrolling
+                                        animation when clicking on another page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 w-md-50-75 w-sm-100 rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/sBechoeGithub.png" class="img-fluid rounded" alt="Card title">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="https://sbechoe.github.io/" target="_blank"
+                                       class="card-title fw-bold fs-5">sbechoe.github.io</a>
+                                    <p class="card-text">This website was created by my Study Career Supervisor <br>
+                                        (S. Bechoe), of which her loading screen & About Me stats have inspired me.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2"></div>
-            </div>
-        </div>
-        <div class="portfolio-page page-5 page pb-5 page-invisible">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-10">
-                    <div class="w-md-25-75 m-auto bg-brown p-3 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            About the portfolio
-                        </p>
-                    </div>
-                    <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
-                        <p>
-                            Hello there! Fun to see that you're interested in the portfolio itself! On this page you can
-                            find information about the portfolio, its color schemes, inspirations and the sitemap of the
-                            portfolio!
-                        </p>
-                        <p>
-                            I've made this portfolio, (and an earlier/older version of this) for school exercises. The
-                            older version has been made with experience of just a few months, while this portfolio has
-                            been made with experience of about a year.
-                        </p>
-                        <p>
-                            In the first 2 periods of school I had to seek inspiration (and of course) create my first
-                            portfolio. I hadn't taken much time for this due to other school projects, but for this
-                            current portfolio I have, which resulted in me being able to add much more.
-                        </p>
-                        <p>
-                            <i>For the future:</i> <br>
-                            You may see this portfolio get changed over the course of time when I learn more about
-                            JavaScript/HTML/CSS or even new programming languages. I may work on it when I have time
-                            available, to add more (and fun) features to make this look more lively. But for now,
-                            <br><br>
-                            <i><u>I thank you for reading this and for visiting my portfolio.</u></i>
-                        </p>
-                    </div>
-                    <div class="w-md-25-75 m-auto my-5 bg-brown p-2 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            Color Schemes
-                        </p>
-                    </div>
-                    <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
-                        <p>
-                            As mentioned in the Skills & Experience area at my <span data-value="1" class="text-primary redirect-btn">About Me</span> page, I am not that
-                            skilled in the designing of a website, which includes colors. If I have to be honest, I have
-                            just picked some random colors and see how far I could get with those, which resulted in the
-                            color scheme of this website. (Which is in my own opinion, not too bad).
-                        </p>
-                        <p><i>You can see the color schemes in the 2 images below.</i></p>
-                    </div>
-                    <div class="row d-flex align-items-center flex-direction-column">
-                        <div class="col-12 col-lg-5 my-5">
-                            <img src="img/colorScheme1.png" class="img-fluid mx-auto d-block rounded border border-3"
-                                alt="First color scheme">
-                        </div>
-                        <div class="col-2"></div>
-                        <div class="col-12 col-lg-5">
-                            <img src="img/colorScheme2.png" class="img-fluid mx-auto d-block rounded border border-3"
-                                alt="Second color scheme">
-                        </div>
-                    </div>
-                    <div class="w-md-25-75 m-auto my-5 bg-brown p-2 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            Inspirations
-                        </p>
-                    </div>
-                    <div class="card-group">
-                        <div class="card m-3 w-md-50-75 w-sm-100 rounded">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/toyfightDotCo.png" class="img-fluid rounded" alt="Card title">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <a href="https://toyfight.co/" target="_blank"
-                                            class="card-title fw-bold fs-5">Toyfight.co</a>
-                                        <p class="card-text">This website has mostly inspired me to add the scrolling
-                                            animation when clicking on another page.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 w-md-50-75 w-sm-100 rounded">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/sBechoeGithub.png" class="img-fluid rounded" alt="Card title">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <a href="https://sbechoe.github.io/" target="_blank"
-                                            class="card-title fw-bold fs-5">sbechoe.github.io</a>
-                                        <p class="card-text">This website was created by my Study Career Supervisor <br>
-                                            (S. Bechoe), of which her loading screen & About Me stats have inspired me.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-md-25-75 m-auto my-5 bg-brown p-2 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            Sitemap
-                        </p>
-                    </div>
-                    <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
-                        <p>
-                            You can find the layout of the website here, and where most of the buttons and links lead
-                            to. (Displayed in an image)<br>
-                            <i>This may not be entirely accurate with all the links on this portfolio.</i>
-                        </p>
-                    </div>
-                    <div class="row d-flex align-items-center flex-direction-column">
-                        <div class="col-12 my-5">
-                            <img src="img/sitemap.png" class="img-fluid mx-auto d-block rounded border border-3"
-                                alt="First color scheme">
-                        </div>
+                <div class="w-md-25-75 m-auto my-5 bg-brown p-2 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        Sitemap
+                    </p>
+                </div>
+                <div class="w-md-50-75 w-sm-100 m-auto mt-5 p-3 bg-light rounded-3">
+                    <p>
+                        You can find the layout of the website here, and where most of the buttons and links lead
+                        to. (Displayed in an image)<br>
+                        <i>This may not be entirely accurate with all the links on this portfolio.</i>
+                    </p>
+                </div>
+                <div class="row d-flex align-items-center flex-direction-column">
+                    <div class="col-12 my-5">
+                        <img src="img/sitemap.png" class="img-fluid mx-auto d-block rounded border border-3"
+                             alt="First color scheme">
                     </div>
                 </div>
-                <div class="col"></div>
             </div>
+            <div class="col"></div>
         </div>
-        <div class="cv page-6 page pb-5 page-invisible">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-10 text-center">
-                    <div class="w-md-25-75 m-auto mb-5 bg-brown p-3 rounded-3">
-                        <p class="text-center fs-2 fw-bold m-auto">
-                            CV
-                        </p>
-                    </div>
-                    <img src="img/CV2.png" class="img-fluid mx-auto d-block rounded border border-3"
-                         alt="CV">
-                    <a href="./downloadable_files/CV2.pdf" download="Tim_Vos-CV" class="btn btn-dark bg-brown mt-3" type="button">Download PDF</a>
+    </div>
+    <div class="cv page-6 page pb-5 page-invisible">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10 text-center">
+                <div class="w-md-25-75 m-auto mb-5 bg-brown p-3 rounded-3">
+                    <p class="text-center fs-2 fw-bold m-auto">
+                        CV
+                    </p>
                 </div>
-                <div class="col"></div>
+                <img src="img/CV2.png" class="img-fluid mx-auto d-block rounded border border-3"
+                     alt="CV">
+                <a href="./downloadable_files/CV2.pdf" download="Tim_Vos-CV" class="btn btn-dark bg-brown mt-3"
+                   type="button">Download PDF</a>
             </div>
+            <div class="col"></div>
         </div>
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    </div>
+</main>
+<footer>
+    <!-- place footer here -->
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
-    <script src="js/pageAnimations.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/pageAnimations.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
