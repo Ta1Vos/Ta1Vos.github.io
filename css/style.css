@@ -89,23 +89,31 @@ body {
 }
 
 .html-progress-bar {
-    width: 70%;
+    width: 92%;
 }
 
 .css-progress-bar {
-    width: 65%;
+    width: 69%;
 }
 
 .bs-progress-bar {
-    width: 80%;
+    width: 89%;
 }
 
 .js-progress-bar {
-    width: 82%;
+    width: 68%;
+}
+
+.php-progress-bar {
+    width: 88%;
+}
+
+.symfony-progress-bar {
+    width: 41%;
 }
 
 .design-progress-bar {
-    width: 14%;
+    width: 23%;
 }
 
 .w-md-25-75 {
