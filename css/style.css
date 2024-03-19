@@ -142,6 +142,10 @@ body {
     transform: rotateZ(-180deg);
 }
 
+.collapsable-toggle {
+    cursor: pointer;
+}
+
 @keyframes slideoutright {
     from {
         margin-left: 0%;
