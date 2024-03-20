@@ -36,6 +36,28 @@ let cancelDivShrink = false;
 //     text.classList.add('shrinked-div');
 // });
 
+function calculateAge(birthDate) {
+    const currentDate = new Date();
+    const birthYear = birthDate.getFullYear();
+    const currentYear = currentDate.getFullYear();
+
+    let age = currentYear - birthYear;
+
+    // Check if the birthday has occurred this year
+    const birthMonth = birthDate.getMonth();
+    const currentMonth = currentDate.getMonth();
+    if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDate.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
+const birthDate = new Date("2006-06-27");
+const age = calculateAge(birthDate);
+
+document.querySelector('.age').innerHTML = age.toString();
+
 function toggleDivVisibility(div) {
     div.classList.toggle('d-none');
 }
