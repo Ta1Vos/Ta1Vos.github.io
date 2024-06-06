@@ -4,7 +4,7 @@ const otherInteractions = document.querySelectorAll(`.redirect-btn`);
 const main = document.querySelector('main');
 
 let animationRunning = false;
-let currentPage = 2;
+let currentPage = 0;
 
 //Puts eventlistener on every page button
 for (let i = 0; i < menuButtons.length; i++) {
