@@ -5,7 +5,7 @@ let websiteLoaded = false;
 let loadSeconds = 0;
 
 window.addEventListener("DOMContentLoaded", function() {
-    websiteLoaded = true;
+    loadScreenFade();
 });
 
 function loadScreenAnimation() {
@@ -21,22 +21,17 @@ function loadScreenAnimation() {
             }
 
             loadScreenAnimation();
-        }, 1000);
-
-        if (websiteLoaded == true) {
-            websiteLoaded = false;
-            loadScreenFade();
-        }
+        }, 500);
     }
 }
 
 function loadScreenFade() {
-    loadingOverlay.style.opacity = loadingOverlay.style.opacity -= 0.01;
+    loadingOverlay.style.opacity = loadingOverlay.style.opacity -= 0.010;
 
     if (loadingOverlay.style.opacity > 0.03) {
         setTimeout(() => {
             loadScreenFade();
-        }, 15);
+        }, 10);
     } else {
         loadingOverlay.remove();
         websiteLoaded = `yes`;
