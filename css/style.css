@@ -93,15 +93,15 @@ body {
 }
 
 .html-progress-bar {
-    width: 92%;
+    width: 78%;
 }
 
 .css-progress-bar {
-    width: 69%;
+    width: 41%;
 }
 
 .bs-progress-bar {
-    width: 89%;
+    width: 92%;
 }
 
 .js-progress-bar {
@@ -109,15 +109,15 @@ body {
 }
 
 .php-progress-bar {
-    width: 88%;
+    width: 81%;
 }
 
 .symfony-progress-bar {
-    width: 41%;
+    width: 91%;
 }
 
-.design-progress-bar {
-    width: 23%;
+.flutter-progress-bar {
+    width: 9%;
 }
 
 .w-md-25-75 {
