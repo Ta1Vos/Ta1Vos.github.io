@@ -63,6 +63,10 @@ body {
     background-color: #E67849;
 }
 
+.border-start-brown {
+    border-color: #402114 !important;
+}
+
 .w-80 {
     width: 80%;
 }
@@ -122,6 +126,10 @@ body {
 
 .w-md-50-75 {
     width: 50%;
+}
+
+.vh-50 {
+    height: 50vh;
 }
 
 /* ARROW ANIMATION */
@@ -194,16 +202,23 @@ body {
     }
 }
 
+/* SM Breakpoint */
+@media screen and (min-width:576px) {
+    .w-sm-100 {
+        width: 100%;
+    }
+}
+
 /* MD Breakpoint */
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
     .w-md-25-75, .w-md-50-75 {
         width: 75%;
     }
 }
 
-/* SM Breakpoint */
-@media screen and (max-width:576px) {
-    .w-sm-100 {
-        width: 100%;
+/* LG Breakpoint */
+@media screen and (min-width: 992px) {
+    .vh-lg-50 {
+        height: 50vh;
     }
 }
