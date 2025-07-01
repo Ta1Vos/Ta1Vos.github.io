@@ -13,8 +13,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -27,13 +27,15 @@
                 aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="row navbar-nav mt-2 mt-lg-0 w-100 li-hover d-flex align-items-center text-center">
-                <li class="col-0 col-lg-1"></li>
                 <li class="col-12 col-md-2 nav-item">
                     <div class="nav-link menu-btn text-center" id="aboutme-page">About Me <span
                             class="visually-hidden"></span></div>
                 </li>
                 <li class="col-12 col-md-2 nav-item">
                     <div class="nav-link menu-btn">Projects <span class="visually-hidden"></span></div>
+                </li>
+                <li class="col-12 col-md-2 nav-item">
+                    <div class="nav-link menu-btn">Experiences <span class="visually-hidden"></span></div>
                 </li>
                 <li class="col-12 col-md-2 nav-item">
                     <div class="nav-link menu-btn">Contact <span class="visually-hidden"></span></div>
@@ -95,25 +97,25 @@
         </div>
         <div class="container-fluid row d-flex flex-row justify-content-center pt-5 mt-5">
             <div class="col-12 col-lg-3 card m-3">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h4 class="card-title">About me</h4>
                     <p>
-                        Some information about myself!
+                        Some information about myself
                     </p>
                     <div data-value="1"
-                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
                         Me!
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-3 card m-3">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h4 class="card-title">Projects</h4>
                     <p>
-                        Projects I have made until now!
+                        Projects I have made until now
                     </p>
                     <div data-value="2"
-                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to
                         Projects!
                     </div>
                 </div>
@@ -121,55 +123,67 @@
             <div class="col-lg-12 my-lg-3">
             </div>
             <div class="col-12 col-lg-3 card m-3">
-                <div class="card-body">
-                    <h4 class="card-title">Contact</h4>
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">Experiences</h4>
                     <p>
-                        If you're interested in business with me, you can find information to contact me here!
+                        Experiences I've gained over the years
                     </p>
                     <div data-value="3"
-                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
-                        contact page!
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                        Experiences page!
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-3 card m-3">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">Contact</h4>
+                    <p>
+                        If you're interested in business with me, you can find information to contact me here
+                    </p>
+                    <div data-value="4"
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                        Contact page!
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card m-3">
+                <div class="card-body d-flex flex-column">
                     <h4 class="card-title">Frequently asked questions (FAQ)</h4>
                     <p>
                         If you have a question, it may have been answered multiple times already. You can find those
-                        here!
+                        here
                     </p>
-                    <div data-value="4"
-                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                    <div data-value="5"
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
                         FAQ page!
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-3 card m-3">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h4 class="card-title">About the Portfolio</h4>
                     <p>
-                        Information about this portfolio website, how its made, why its made!
+                        Information about this portfolio website, how its made, why its made
                     </p>
-                    <div data-value="5"
-                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
-                        the Portfolio!!
+                    <div data-value="6"
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to About
+                        the Portfolio!
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 my-lg-3">
-            </div>
             <div class="col-12 col-lg-3 card m-3">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h4 class="card-title">CV</h4>
                     <p>
                         My current CV, containing some information about my experiences in the past.
                     </p>
-                    <div data-value="6"
-                         class="redirect-btn card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
+                    <div data-value="7"
+                         class="redirect-btn mt-auto card-link stretched-link p-2 text-white bg-brown rounded-2">Go to the
                         CV page!
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-12 my-lg-3">
             </div>
         </div>
     </div>
@@ -1323,7 +1337,79 @@
             <div class="col-0 col-sm-2"></div>
         </div>
     </div>
-    <div class="contact-page page-3 page pb-5 page-invisible">
+    <div class="experience-page page-3 page pb-5 page-invisible">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-12 col-md-10">
+                <section>
+                    <div class="container py-5">
+                        <div class="main-timeline">
+                            <div class="timeline timeline-left">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <h3>AEHT Youth Parliament 2025</h3>
+                                        <h6 class="text-muted">April 7th - April 11th</h6>
+                                        <p class="mb-2">Youth Parliament (Bjelovar, Croatia): A smaller event of the AEHT. A small set of schools is invited to this event, of which each gets to bring 1-2 students and a possible supervising
+                                            teacher. During this event it's important that the students work together in a couple of teams where they discuss and document topics surrounding the local area they are visiting.</p>
+                                        <p class="mb-0">My main task during this event was to get inspiration for the applications to see what could be added more to the event pages for the Youth Parliament, so that the event has more filler-content.
+                                            Besides my main task I also kept up a blog with everything that happened/occurred during the event.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline timeline-right">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <h3>Skills Heroes Web Developer 2025</h3>
+                                        <h6 class="text-muted">January 20th</h6>
+                                        <p class="mb-0">On January 20th 2025 I have participated in the qualifying round of the Skills Heroes Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline timeline-left">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <h3>AEHT Christmas In Europe December 2024</h3>
+                                        <h6 class="text-muted">December 1st - December 6th</h6>
+                                        <p class="mb-2">Christmas In Europe (The Hague, The Netherlands): The second-largest event of the AEHT. This event revolves around a cultural exchange in between the participating schools. The students will follow a program set by
+                                            the organising school and will also cook a couple of traditional dishes originating from their own country and/or culture.</p>
+                                        <p class="mb-0">My task for this event was to make sure the information of the programs stayed up-to-date and that all the dishes cooked by the countries are documented in the app. Besides these tasks
+                                            I also had the task to promote the app again to make sure it gets used properly during the event.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline timeline-right">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <h3>AEHT Annual Conference November 2024</h3>
+                                        <h6 class="text-muted">November 4th - November 9th</h6>
+                                        <p class="mb-2">Annual Conference (Riga, Latvia): The largest and most popular event of the AEHT. 400+ participants have been recorded during the Annual Conference 2024.</p>
+                                        <p class="mb-2">
+                                            This event revolves around competitions in between the various schools with their various courses within the school, such as Barista or Hotel Management, to see
+                                            which school can show the best qualities within this event.</p>
+                                        <p class="mb-0">
+                                            My task for this event was to receive information from the head-judges of the competitions and the organisation and make sure all of this data/information is available in the app
+                                            so that competitors, but also visitors of the event can see what's going on, where and when. With this I also had to make sure the app got promoted on the event locations, so that
+                                            everyone is aware they can download the app with all the information they need for the event.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline timeline-left">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <h3>Skills Heroes Software Developer 2024</h3>
+                                        <h6 class="text-muted">January 11th</h6>
+                                        <p class="mb-0">On January 11th 2024 I have participated in the qualifying round of the Skills Heroes Software Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="contact-page page-4 page pb-5 page-invisible">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
@@ -1370,7 +1456,7 @@
             <div class="col-2"></div>
         </div>
     </div>
-    <div class="faq-page page-4 page pb-5 page-invisible">
+    <div class="faq-page page-5 page pb-5 page-invisible">
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8 m-auto px-4">
@@ -1397,7 +1483,7 @@
             <div class="col-sm-2"></div>
         </div>
     </div>
-    <div class="portfolio-page page-5 page pb-5 page-invisible">
+    <div class="portfolio-page page-6 page pb-5 page-invisible">
         <div class="row">
             <div class="col"></div>
             <div class="col-10">
@@ -1518,7 +1604,7 @@
             <div class="col"></div>
         </div>
     </div>
-    <div class="cv page-6 page pb-5 page-invisible">
+    <div class="cv page-7 page pb-5 page-invisible">
         <div class="row">
             <div class="col"></div>
             <div class="col-10 text-center">
