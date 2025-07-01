@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 function loadScreenAnimation() {
-    if (websiteLoaded != `yes`) {
+    if (websiteLoaded != true) {
         setTimeout(() => {
             loadSeconds++;
 
@@ -34,7 +34,7 @@ function loadScreenFade() {
         }, 10);
     } else {
         loadingOverlay.remove();
-        websiteLoaded = `yes`;
+        websiteLoaded = true;
     }
 }
 
