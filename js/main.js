@@ -1,4 +1,5 @@
-document.body.style.backgroundImage = `linear-gradient(${Math.round(Math.random(360)) * 100}deg, #FF8552, rgba(228, 225, 219, 1))`;
+const randomBackgroundImage = `linear-gradient(${Math.round(Math.random(360)) * 100}deg, #FF8552, rgba(228, 225, 219, 1))`;
+document.body.style.backgroundImage = randomBackgroundImage;
 
 const projectCards = document.querySelectorAll('.project-card');
 
